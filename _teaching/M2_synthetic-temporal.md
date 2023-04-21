@@ -1,8 +1,8 @@
 ---
-title: "Teaching experience 2"
+title: "M2 - Temporal series"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+type: "Undergraduate course"
+permalink: /teaching/M2_synthetic-temporal
 venue: "University 1, Department"
 date: 2015-01-01
 location: "City, Country"
