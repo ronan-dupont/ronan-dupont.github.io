@@ -1,7 +1,7 @@
 ---
 title: "Sandy beach dynamics by constrained wave energy minimization"
 collection: publications
-permalink: /publication/2023_sandy_beach_dynamics.pdf
+permalink: /publication/2023_sandy_beach_dynamics
 excerpt: ''
 date: 2023-04-16
 venue: 'Ocean Modelling'
