@@ -1,14 +1,14 @@
 ---
 title: "OptiMorph : un modèle de morphodynamique du littoral par principe de minimisation. Analyse de sensibilité en 1D et application multi-1D"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: files/OptiMorph.pdf
 date: 2022-01-01
 venue: 'Editions Paralia'
 paperurl: 'http://ronan-dupont.github.io/files/OptiMorph.pdf'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://ronan-dupont.github.io/files/OptiMorph.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+De nos jours, dans un contexte de changement global accéléré, modéliser numériquement le transport et la morphologie en zone littorale est une problématique majeure pour caractériser et quantifier : a) les flux sédimentaires, b) l'évolution des formes de fond et sur la plage émergée, c) la réaction de la plage à certains aménagements ou évolutions du contexte (niveau marin, apports de sable, destruction du biotope, ...). La modélisation morphodynamique littorale est également cruciale pour accompagner le dimensionnement et l'implantation de nombreux systèmes de protection du littoral ({\it e.g.} \textsc{D Isebe \& al, 2018}).
+	
+	Les modèles actuels de transport sédimentaire sont basés sur le critère de Shields, qui décrit les conditions de déclenchement du transport à l'échelle granulaire, et permet la paramétrisation de ce transport aux plus grandes échelles. Ces approches utilisent toutes la notion de flux local de sédiment. Toutefois, ces dernières années, \textsc{Isebe}, \textsc{Bouharguane} et finalement \textsc{Cook M} \& al (2021) ont développé un outil numérique s'appuyant sur un principe de transport optimal. Cette approche considère que la forme du fond marin doit être une forme optimale minimisant une certaine fonctionnelle représentative de l'énergie des vagues. Plusieurs définitions de cette fonctionnelle ont déjà été proposées (Cook et al., 2021) et dans ce travail, cette définition est précisée, et reformulée à partir de travaux fondateurs comme ceux de  \textsc{Newton} (\textit{Minimal Resistance Problem}).
+	
+L'outil de calcul du transport par optimisation  s'affranchi d'un grand nombre de paramètres de contrôle. Par ailleurs, c'est un outil qui peut calculer des temps longs en quelques minutes. La version qui est proposée dans ce travail réalise la modélisation de l'évolution du profil 2DV perpendiculairement à la côte dans différents contextes de forçages, de fond marin et de choix de la fonctionnelle au coeur du modèle. 	Dans un tel contexte, l'objectif est de réaliser un travail de validation de ce modèle en le déployant sur plusieurs situations types. Une partie de la validation est réalisée par comparaison des résultats numériques avec des données expérimentales de canal issue d'un projet anterieur (COPTER 2D); une autre partie consiste à réaliser des simulation comparatives avec d'autres modèles morphodynamiques de la communauté scientifique comme Xbeach par exemple. Techniquement parlant, une large base de données de résultat est obtenue en réalisant une grille de calcul sur cluster HPC avec ce modèle, et les résultats sont analysés par fouille de données. On montre dans quel contexte cette version de modèle par optimisation permet une bonne caractérisation de la morphodynamique de plage. 
