@@ -5,7 +5,7 @@ permalink: /publication/2023_sandy_beach_dynamics.pdf
 excerpt: ''
 date: 2023-04-16
 venue: 'Ocean Modelling'
-paperurl: 'http://ronan-dupont.github.io/files/Sandy_beach_dynamics.pdf'
+paperurl: ''
 
 citation: 'Dupont, Ronan, Megan Cook, Frédéric Bouchette, Bijan Mohammadi, and Samuel Meulé (2023). “Sandy beach dynamics by constrained wave energy minimization”. In: Ocean Modelling, p. 102197. DOI: doi.org/10.1016/j.ocemod.2023.102197.'
 ---
