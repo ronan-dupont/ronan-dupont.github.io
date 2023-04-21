@@ -1,7 +1,7 @@
 ---
 title: "OptiMorph : un modèle de morphodynamique du littoral par principe de minimisation. Analyse de sensibilité en 1D et application multi-1D"
 collection: publications
-permalink: files/2022_optimorph.pdf
+permalink: /publication/2022-optimorph
 excerpt: ''
 date: 2022-01-01
 venue: 'Editions Paralia'
