@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ronan Dupont WebPage"
+title                    : "Ronan Dupont"
 title_separator          : "-"
 name                     : &name "Ronan Dupont"
 description              : &description "That's my description"
