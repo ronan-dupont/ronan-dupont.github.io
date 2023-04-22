@@ -1,20 +1,16 @@
 ---
-title: "M2 Finite Volumes Shallow Water"
+title: "Coastal and port hydro-morphodynamic modeling tools: OptiMorph - Master Coastal Engineering 2"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/M2_VF-shallow-water
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Master course"
+permalink: /teaching/OptiMorph
+venue: "University of Montpelleir, Master 2 - Coastal Engineering"
+date: 2022-11-01
+location: "Montpellier, France"
 ---
+The goal of this session is to make you take in hand a hydro-moprhodynamic calculation code. This one is the tool I developed during my PhD. It is a research code. You can find more information about it in the "Publications" section.
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
+TP: Prise en main de l'outil OptiMorph
 ======
+For this session, we will use python.
 
-Heading 2
-======
-
-Heading 3
-======
+[Download here](http://ronan-dupont.github.io/files/teaching/TP_OptiMorph.pdf)
