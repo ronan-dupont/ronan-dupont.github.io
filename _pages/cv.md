@@ -11,12 +11,13 @@ redirect_from:
 
 Education
 ======
-* 2016 - 2018: Higher education Program (to prepare students to enter top engineering
-schools), Caen, France.
-* 2018 - 2021: Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France.
 * 2021 - 2024: Ph.D in coastal hydro-morphodynamics, Montpellier University.
 
 My thesis topic is entitled: Wave-morphodynamic coupling of the coastline by minimization principle. Under the supervision of Pr. Mohammadi Bijan and Pr. Bouchette Fréderic, I develop this new approach mathematically, physically and numerically.
+* 2020 - 2021: Master Sciences De La Mer: Physics of the Environment for the Evaluation of Risks (PHYMER), University of Toulon, France.
+* 2018 - 2021: Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France.
+* 2016 - 2018: Higher education Program (to prepare students to enter top engineering
+schools), Caen, France.
 
 Work experience
 ======
