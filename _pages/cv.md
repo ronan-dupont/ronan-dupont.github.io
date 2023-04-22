@@ -11,27 +11,21 @@ redirect_from:
 
 Education
 ======
-* Higher education Program (to prepare students to enter top engineering
-schools), Caen, France, 2016 - 2018
-*  Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France, 2018 - 2021
-* Ph.D in Wave-morphodynamic coupling of the coastline by minimization principle, Montpellier University, 2021 - 2024
+* 2016 - 2018: Higher education Program (to prepare students to enter top engineering
+schools), Caen, France.
+* 2018 - 2021: Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France.
+* 2021 - 2024: Ph.D in Wave-morphodynamic coupling of the coastline by minimization principle, Montpellier University.
+Direction : Frédéric BOUCHETTE, Bijan MOHAMMADI.
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Mars-september 2021: End of study research internship at Segula Technologies, Trappes, France
+  * CFD optimization of the performance of windsurf sails intended for high speeds.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
 Skills
 ======
-* Skill 1
-* Skill 2
+* Numerical modelling
+* Coding
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
