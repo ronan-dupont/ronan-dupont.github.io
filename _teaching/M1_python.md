@@ -8,7 +8,7 @@ date: 2022-10-01
 location: "Montpellier, France"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+This python course is intended for master 1 in coastal engineering. The lessons are adapted for beginners.
 
 TP1: Les bases du langage Python
 ======
@@ -32,9 +32,8 @@ TP2: Initiation au langage orienté objet
 
 TP3: Les bases du langage Python
 ======
-1) Remise dans le bain : tracer une fonction, lecture/écriture de fichier
-
-2) Cryptage de César
+1) Remise dans le bain : tracer une fonction, lecture/écriture de fichier, [File for question 1](http://ronan-dupont.github.io/files/teaching/fichierTP03.txt)
+2) Cryptage de César, [File for question 9](http://ronan-dupont.github.io/files/teaching/TP03_file_Q9.txt)
 
 [Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03.pdf)
 
