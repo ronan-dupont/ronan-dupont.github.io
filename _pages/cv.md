@@ -26,6 +26,7 @@ Skills
 ======
 * Numerical modelling
 * Optimization
+* Costal physics
 * Fluid mechanics
 * Numercial simulation
   * Fluent
