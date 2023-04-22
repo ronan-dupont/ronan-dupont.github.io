@@ -1,5 +1,5 @@
 ---
-title: "Advanced coastal and harbor hydromorphodynamics - Master Coastal Engineering 2"
+title: "Advanced coastal and harbor hydromorphodynamics"
 collection: teaching
 type: "Master course"
 permalink: /teaching/M2_hydromorphocynamic

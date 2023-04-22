@@ -1,5 +1,5 @@
 ---
-title: "Coastal and port hydro-morphodynamic modeling tools: OptiMorph - Master Coastal Engineering 2"
+title: "Coastal and port hydro-morphodynamic modeling tools: OptiMorph"
 collection: teaching
 type: "Master course"
 permalink: /teaching/OptiMorph
