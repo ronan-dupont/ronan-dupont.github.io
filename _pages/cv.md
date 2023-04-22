@@ -20,12 +20,8 @@ My thesis topic is entitled: Wave-morphodynamic coupling of the coastline by min
 
 Work experience
 ======
-* Mars-september 2021: End of study research internship at Segula Technologies, Trappes, France
-
-Title: CFD optimization of the performance of windsurf sails intended for high speeds.
-* Summer 2017-2023 : Beach lifeguard: Normandy Beaches
-
-Works as a head of post in a first aid station: prevention and rescue.
+* Mars-september 2021: End of study research internship at Segula Technologies, Trappes, France. CFD optimization of the performance of windsurf sails intended for high speeds.
+* Summer 2017-2023 : Beach lifeguard: Normandy Beaches. Works as a head of post in a first aid station: prevention and rescue.
 
 Skills
 ======
