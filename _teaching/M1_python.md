@@ -1,17 +1,20 @@
 ---
 title: "M1 - Python Courses"
 collection: teaching
-type: "Undergraduate course"
+type: "Master course"
 permalink: /teaching/M1_python
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "University of Montpelleir, Master 1 - Coastal Engineering"
+date: 2022-10-01
+location: "Montpellier, France"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+TP1:
 ======
+1) Créer et tracer une fonction 
+2) Nombres narcissiques
+3) Palindrome - lire un fichier
 
 Heading 2
 ======
