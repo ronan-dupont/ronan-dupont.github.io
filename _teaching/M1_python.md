@@ -1,5 +1,5 @@
 ---
-title: "M1 - Python Courses"
+title: "Python Courses - Master Coastal Engineering 1"
 collection: teaching
 type: "Master course"
 permalink: /teaching/M1_python
