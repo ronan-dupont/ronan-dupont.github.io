@@ -27,10 +27,10 @@ Skills
 * Numerical modelling
 * Skill 3
 * Languages
-  * French: 
-  * English: 
-  * Italian: 
-  * German: 
+  * French: Mother tongue
+  * English: B2 level (TOEIC 825)
+  * Italian: Basic
+  * German: Basic
 
 
 Publications
