@@ -8,7 +8,7 @@ date: 2022-10-01
 location: "Montpellier, France"
 ---
 
-This python course is intended for master 1 in coastal engineering. The lessons are adapted for beginners.
+This 4 session lesson will allow you to become autonomous in Python from scratch.
 
 TP1: Les bases du langage Python
 ======

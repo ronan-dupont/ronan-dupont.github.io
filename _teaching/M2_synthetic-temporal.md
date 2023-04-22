@@ -1,20 +1,32 @@
 ---
-title: "Creation of synthetic time series from a spectrum (Jonswap) - Master Coastal Engineering 2"
+title: "Advanced coastal and harbor hydromorphodynamics - Master Coastal Engineering 2"
 collection: teaching
 type: "Master course"
-permalink: /teaching/M2_synthetic-temporal
+permalink: /teaching/M2_hydromorphocynamic
 venue: "University of Montpelleir, Master 2 - Coastal Engineering"
 date: 2023-01-01
 location: "Montpellier, France"
 ---
-This course is intended for master 2 in coastal engineering. The lessons are adapted for beginners.
+In this 4-session module, we will look at some topics on coastal hydro-morphodynamics, mainly synthetic time series and solving shallow-water equations in finite volumes.
 
-TP1: Les bases du langage Python
+TP1: Creation of synthetic time series from a spectrum (Jonswap)
 ======
-1) Créer et tracer une fonction 
+For this session, we will use python.
 
-2) Nombres narcissiques
+[Download here](http://ronan-dupont.github.io/files/teaching/TP01_series_temporelles.pdf)
 
-3) Palindrome - lire un fichier
 
-[Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01.pdf)
+TP2-3: Solving Shallow-Water equations in finite volumes
+======
+For this session, we will use python.
+
+[Download here](http://ronan-dupont.github.io/files/teaching/TP02-03_VF-Saint-Venant.pdf)
+
+
+TP4: Deepening: Finite volumes, Shoaling model, ...
+======
+For this session, we will use python.
+
+[Download here](http://ronan-dupont.github.io/files/teaching/TP04_series_divers.pdf)
+
+
