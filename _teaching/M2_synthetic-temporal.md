@@ -1,5 +1,5 @@
 ---
-title: "Python Courses - Master Coastal Engineering 2"
+title: "Creation of synthetic time series from a spectrum (Jonswap) - Master Coastal Engineering 2"
 collection: teaching
 type: "Master course"
 permalink: /teaching/M2_synthetic-temporal
@@ -7,7 +7,7 @@ venue: "University of Montpelleir, Master 2 - Coastal Engineering"
 date: 2023-01-01
 location: "Montpellier, France"
 ---
-This python course is intended for master 1 in coastal engineering. The lessons are adapted for beginners.
+This course is intended for master 2 in coastal engineering. The lessons are adapted for beginners.
 
 TP1: Les bases du langage Python
 ======
