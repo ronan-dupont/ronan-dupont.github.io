@@ -15,12 +15,13 @@ Education
 schools), Caen, France.
 * 2018 - 2021: Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France.
 * 2021 - 2024: Ph.D in coastal hydro-morphodynamics, Montpellier University.
+
 My thesis topic is entitled: Wave-morphodynamic coupling of the coastline by minimization principle. Under the supervision of Pr. Mohammadi Bijan and Pr. Bouchette Fréderic, I develop this new approach mathematically, physically and numerically.
 
 Work experience
 ======
 * Mars-september 2021: End of study research internship at Segula Technologies, Trappes, France
-  * CFD optimization of the performance of windsurf sails intended for high speeds.
+CFD optimization of the performance of windsurf sails intended for high speeds.
 
 Skills
 ======
