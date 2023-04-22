@@ -18,6 +18,8 @@ TP1: Les bases du langage Python
 
 3) Palindrome - lire un fichier
 
+[Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01.pdf)
+
 TP2: Initiation au langage orienté objet
 ======
 1) Création d’une classe point
@@ -26,14 +28,20 @@ TP2: Initiation au langage orienté objet
 
 3) Création d’une classe de nuage de points
 
+[Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-02.pdf)
+
 TP3: Les bases du langage Python
 ======
 1) Remise dans le bain : tracer une fonction, lecture/écriture de fichier
 
 2) Cryptage de César
 
+[Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03.pdf)
+
 TP4: Les bases du langage Python - Examen blanc
 ======
 1) Courbe mystère 
 
 2) Suite de Fibonacci
+
+[Download here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-04.pdf)

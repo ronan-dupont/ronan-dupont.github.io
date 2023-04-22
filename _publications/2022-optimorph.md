@@ -11,5 +11,5 @@ citation: 'DUPONT, Ronan, Frédéric BOUCHETTE, Bijan MOHAMMADI, and Damien SOUS
 ---
 Le modèle numérique OptiMorph résout des problèmes morphodynamiques par une approche de transport optimal. Dans un premier temps, nous nous intéressons au comportement du modèle pour différents forçages et discrétisations spatiales et temporelles. Cette analyse permet de s’assurer de la consistance et de la stabilité du modèle. Ensuite, nous appliquons le modèle dans une configuration ‘multi-1D’ sur des données réelles. Il s’agit de positionner un tube en géotextile dans le Golfe d'Aigues Mortes. L’analyse des résultats montre l’efficacité de ce tube lors d’une tempête de quelques jours, réduisant la hauteur d’une barre sédimentaire. 
 
-[Download paper here](http://ronan-dupont.github.io/files/2022_optimorph.pdf)
+[Download paper here](http://ronan-dupont.github.io/files/paper/2022_optimorph.pdf)
 
