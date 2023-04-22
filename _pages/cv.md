@@ -14,8 +14,8 @@ Education
 * 2016 - 2018: Higher education Program (to prepare students to enter top engineering
 schools), Caen, France.
 * 2018 - 2021: Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France.
-* 2021 - 2024: Ph.D in Wave-morphodynamic coupling of the coastline by minimization principle, Montpellier University.
-Direction : Frédéric BOUCHETTE, Bijan MOHAMMADI.
+* 2021 - 2024: Ph.D in coastal hydro-morphodynamics, Montpellier University.
+My thesis topic is entitled: Wave-morphodynamic coupling of the coastline by minimization principle. Under the supervision of Pr. Mohammadi Bijan and Pr. Bouchette Fréderic, I develop this new approach mathematically, physically and numerically.
 
 Work experience
 ======
@@ -25,7 +25,16 @@ Work experience
 Skills
 ======
 * Numerical modelling
-* Skill 3
+* Optimization
+* Fluid mechanics
+* Numercial simulation
+  * Fluent
+  * ADINA
+  * Abaqus
+* Programming
+  * Python / Matlab
+  * Fortran
+  * C / C++
 * Languages
   * French: Mother tongue
   * English: B2 level (TOEIC 825)
