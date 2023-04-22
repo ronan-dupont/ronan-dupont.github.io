@@ -14,4 +14,6 @@ This year, the workshop was based on various themes such as the CFOSAT project, 
 
 Each participant was able to present his research topic such as: hydrodynamics on complex bottom, lagoon hydrodynamics or bores waves around the island of Maupiti. The doctoral students present were able to present their thesis topic and others took the opportunity to present the progress of their research, including the presentation of the first results of the experiment LEGOLAS.
 
+[My presentation](http://ronan-dupont.github.io/files/presentation/Presentation_Ronan_workshop_Gradys.pdf)
+
 ![Editing a markdown file for a talk](/images/gladys-workshop-2022.jpg)

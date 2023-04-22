@@ -13,3 +13,5 @@ The fourth edition of the International Coastal Exhibition took place as usual i
 ![Editing a markdown file for a talk](/images/salon-littoral-2021-1.jpg)
 
 I presented in poster form the aspects of our new method for calculating coastal hydro-morphodynamics.
+
+[My poster](http://ronan-dupont.github.io/files/poster/Poster_Salon_du_littoral_2021.pdf)
