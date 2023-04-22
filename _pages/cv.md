@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Higher education Program (to prepare students to enter top engineering
+schools), Caen, France, 2016 - 2018
+*  Advanced Engineering Master in Computational Fluid Dynamics, SeaTech, Engineering School, Toulon University, France, 2018 - 2021
+* Ph.D in Wave-morphodynamic coupling of the coastline by minimization principle, Montpellier University, 2021 - 2024
 
 Work experience
 ======
@@ -53,7 +54,3 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
