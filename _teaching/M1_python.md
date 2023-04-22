@@ -16,8 +16,18 @@ TP1:
 2) Nombres narcissiques
 3) Palindrome - lire un fichier
 
-Heading 2
+TP2: 
 ======
+1) Création d’une classe point
+2) Création d’une classe rectangle
+3) Création d’une classe de nuage de points
 
-Heading 3
+TP3:
 ======
+1) Remise dans le bain : tracer une fonction, lecture/écriture de fichier
+2) Cryptage de César
+
+TP4:
+======
+1) Courbe mystère 
+2) Suite de Fibonacci
