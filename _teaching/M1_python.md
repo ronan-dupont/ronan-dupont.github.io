@@ -10,7 +10,7 @@ location: "Montpellier, France"
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-TP1:
+TP1: Les bases du langage Python
 ======
 1) Créer et tracer une fonction 
 
@@ -18,7 +18,7 @@ TP1:
 
 3) Palindrome - lire un fichier
 
-TP2: 
+TP2: Initiation au langage orienté objet
 ======
 1) Création d’une classe point
 
@@ -26,13 +26,13 @@ TP2:
 
 3) Création d’une classe de nuage de points
 
-TP3:
+TP3: Les bases du langage Python
 ======
 1) Remise dans le bain : tracer une fonction, lecture/écriture de fichier
 
 2) Cryptage de César
 
-TP4:
+TP4: Les bases du langage Python - Examen blanc
 ======
 1) Courbe mystère 
 
