@@ -433,34 +433,6 @@ body:hover .visually-hidden button {
 
 
 /*
-   Footnotes
-   ========================================================================== */
-
-.footnote {
-  color: mix(#fff, $gray, 25%);
-  text-decoration: none;
-}
-
-.footnotes {
-  color: mix(#fff, $gray, 25%);
-
-  ol, li, p {
-    margin-bottom: 0;
-    font-size: $type-size-6;
-  }
-}
-
-a.reversefootnote {
-  color: $gray;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-
-/*
    Required
    ========================================================================== */
 
