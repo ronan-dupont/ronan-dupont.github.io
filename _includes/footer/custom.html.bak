@@ -1,7 +1,7 @@
 <!-- start custom footer snippets -->
 <body>
     <div style="display: flex; align-items: center;">
-        <img src="/images/avatar_2.png" alt=""  style="width: 128px; height: auto; margin-right: 10px;">
+        <img src="/images/avatar_2.png" alt=""  style="width: 102px; height: auto; margin-right: 10px;">
         <div>
             <p>Contact me:</p>
             <p>ronan.dupont@umontpellier.fr</p>
