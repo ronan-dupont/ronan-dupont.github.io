@@ -24,7 +24,7 @@
 @import "buttons";
 @import "notices";
 @import "masthead";
-@import "navigation";
+@import "navigation"
 @import "syntax";
 
 @import "forms";
