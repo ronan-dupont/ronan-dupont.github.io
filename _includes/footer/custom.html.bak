@@ -1,6 +1,6 @@
 <!-- start custom footer snippets -->
 <body>
-    <div style="display: flex; align-items: center; align='right';">
+    <div style="display: flex; align-items: center; align=RIGHT;">
         <img src="/images/avatar_2.png" alt=""  style="width: 102px; height: auto; margin-right: 10px;">
         <div>
             <p style="margin-top:3px;margin-bottom:3px;">Contact me:</p>
