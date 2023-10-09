@@ -11,4 +11,5 @@
   .toc,
   .page__share,
   .page__related,
-  .ads}
+  .ads
+}
