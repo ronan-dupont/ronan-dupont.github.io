@@ -18,5 +18,3 @@ Research Topic
 My research topic is between physics (hydro-morphodynamics) and mathematics (optimization methods). It consists in developing a new approach to model morphodynamic displacements by a GLOBAL approach. Traditionally, morphodynamic models solve the physics equations LOCALLY at the grain scale (transports). 
 
 This subject leads me to carry out advanced numerical-mathematical developments that will lead us to publish a low-complexity version of our code. The morphodynamic code we are developing is very valuable from a phenomenological point of view. Indeed, it manages to reproduce physical phenomena that no other models manages to do (creation of sedimentary bar). It has the ambition to be published and coupled with any hydrodynamic model.
-
-My mail: ronan.dupont@umontpellier.fr
