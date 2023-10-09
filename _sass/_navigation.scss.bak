@@ -123,7 +123,7 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 0.5em 2em;
+    padding: 0.2em 2em;
     float: left;
     width: 50%;
     font-family: $sans-serif;
