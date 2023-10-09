@@ -6,9 +6,13 @@
    Hide the following elements on print
    ========================================================================== */
 
-@media print{
+@media print {
   .masthead,
   .toc,
   .page__share,
   .page__related,
-  .ads}
+  .ads,
+  .page__footer {
+    display: none;
+  }
+}

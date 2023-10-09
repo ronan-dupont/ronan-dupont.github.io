@@ -1,6 +1,11 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+html {
+  /* sticky footer fix */
+  position: relative;
+  min-height: 100%;
+}
 
 body {
   margin: 0;
@@ -50,6 +55,10 @@ h6 {
 
 small, .small {
   font-size: $type-size-6;
+}
+
+p {
+  margin-bottom: 1.3em;
 }
 
 u,
