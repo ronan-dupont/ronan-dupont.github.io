@@ -1,11 +1,11 @@
 <!-- start custom footer snippets -->
 <body>
-    <div style="display: flex; align-items: center;">
+    <div style="display: flex; align-items: center; align="right"">
         <img src="/images/avatar_2.png" alt=""  style="width: 102px; height: auto; margin-right: 10px;">
         <div>
-            <p>Contact me:</p>
-            <p>ronan.dupont@umontpellier.fr</p>
-			<p>06 70 90 88 08</p>
+            <p style="margin-top:3px;margin-bottom:3px;">Contact me:</p>
+            <p style="margin-top:3px;margin-bottom:3px;">ronan.dupont@umontpellier.fr</p>
+			<p style="margin-top:3px;margin-bottom:3px;">06 70 90 88 08</p>
         </div>
     </div>
 </body>
