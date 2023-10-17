@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "Publications - Ronan Dupont"
 permalink: /publications/
 author_profile: true
 ---
