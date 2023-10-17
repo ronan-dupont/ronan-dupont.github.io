@@ -7,7 +7,7 @@
 {% assign seo_url = seo_url | default: site.github.url %}
 
 {% if page.title %}
-  {% assign seo_title = page.title %}
+  {% assign seo_title = page.title}
 {% endif %}
 
 {% if seo_title %}
