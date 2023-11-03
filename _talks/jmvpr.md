@@ -12,12 +12,12 @@ This year's JMVPR (Journées de Modélisation des Vagues à Phases Résolues) wa
 
 The congress was held in the idyllic setting of the Ile d'Aix. 
 
-My work involved our optimorph model forced by a wave-to-wave resolution model (Shallow Water).
+My work involved our optimorph model forced by a wave-to-wave resolution model (Shallow Water) [PDF](http://ronan-dupont.github.io/files/presentation/Slides_Dupont_Ronan_JMVPR.pdf) [PPTX](http://ronan-dupont.github.io/files/presentation/Slides_Dupont_Ronan_JMVPR.pptx).
 
-Conference information: https://jmvpr2023.sciencesconf.org
 
-[My presentation pdf](http://ronan-dupont.github.io/files/presentation/Slides_Dupont_Ronan_JMVPR.pdf)
+Conference information: [https://jmvpr2023.sciencesconf.org](https://jmvpr2023.sciencesconf.org)
 
-[My presentation pptx](http://ronan-dupont.github.io/files/presentation/Slides_Dupont_Ronan_JMVPR.pptx)
+
+
 
 ![Editing a markdown file for a talk](/images/jmvpr-2023.jpg)
