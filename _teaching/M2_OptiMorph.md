@@ -13,4 +13,10 @@ TP: Prise en main de l'outil OptiMorph
 ======
 For this session, we will use python.
 
-[Download here](http://ronan-dupont.github.io/files/teaching/TP_OptiMorph.pdf)
+Download the TP here [[PDF]](http://ronan-dupont.github.io/files/teaching/TP_OptiMorph.pdf)
+
+The User Guide here [[PDF]](http://ronan-dupont.github.io/files/teaching/User-guide.pdf)
+
+The old code [[Zip]](http://ronan-dupont.github.io/files/teaching/OptiSwan_reference_old.zip)
+
+The new code [[Zip]](http://ronan-dupont.github.io/files/teaching/OptiMorph-1D-UserGuide_tides.zip)
