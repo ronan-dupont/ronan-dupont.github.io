@@ -1,0 +1,32 @@
+dirname: Example_2D-maltais-test-Jtot # dirname to save figs and data
+figname: Example Simulation 2D of storm in linear bathymetry # simulation name appear on figs
+debug: False # this mode plot some interesting values
+makeGifs: True # make gifs
+T0: 4 # wave period
+Hmax: 1.5 # maximum wave height
+h0: 4
+Omega: 600
+n_iteration: 50
+ifre: 5 # save and plot every ifre iteration
+mobility: 0.05
+bathy_type: 2 # [0:18]
+slope_max: 0.2 #
+id_cost_fct: 1 #  cost function [1:12]
+hydro_mode: 0 #  : 0 = shoaling, 1 = swan, 2 = XBeach
+dynamic: True
+gamma: 0.55
+coef_maree: 0 # tide coefficient 
+u_maree: 6.1  # valeur moyenne du marnage
+maree_duration: 12.5 # periode de mareex
+geotube:
+  state: False
+  position_x: 100 # geotube position x [m]
+  position_y: 25 # geotube position y [m] ONLY FOR 2D MODE
+  length: 40    # geotube length [m]
+  height: 2.5   # geotube height [m]
+two_dimension:
+  state: True
+  L_x: 300
+  L_y: 50
+  nwater_x: 270 # nwater_x < L_x
+  theta: 0

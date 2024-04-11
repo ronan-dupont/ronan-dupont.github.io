@@ -1,0 +1,7 @@
+README.md
+setup.py
+optimorph.egg-info/PKG-INFO
+optimorph.egg-info/SOURCES.txt
+optimorph.egg-info/dependency_links.txt
+optimorph.egg-info/requires.txt
+optimorph.egg-info/top_level.txt

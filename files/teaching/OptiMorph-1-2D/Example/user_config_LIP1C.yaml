@@ -1,0 +1,33 @@
+dirname: LIP-1C # dirname to save figs and data
+figname: Example Simulation 1D of storm in convexe bathymetry with tide # simulation name appear on figs
+debug: False # this mode plot some interesting values
+makeGifs: True # make gifs
+T0: 8 # wave period
+Hmax: 0.42 # maximum wave height
+h0: 4.1
+nwater: 180 # in the water
+nsand: 140 # in the sand
+n_iteration: 700
+ifre: 50 # save and plot every ifre iteration
+mobility: 0.002
+bathy_type: 11 # [0:18]
+slope_max: 0.2 #
+id_cost_fct: 1 #  cost function [1:12]
+hydro_mode: 0 #  : 0 = shoaling, 1 = swan, 2 = XBeach
+dynamic: False
+gamma: 0.45
+coef_maree: 0 # tide coefficient 
+u_maree: 6.1  # valeur moyenne du marnage
+maree_duration: 12.5 # periode de maree
+geotube:
+  state: False
+  position_x: 110 # geotube position x [m]
+  position_y: 10 # geotube position y [m] ONLY FOR 2D MODE
+  length: 6    # geotube length [m]
+  height: 2   # geotube height [m]
+two_dimension:
+  state: False
+  n_i: 300
+  n_j: 60
+  L_x: 600
+  L_y: 20

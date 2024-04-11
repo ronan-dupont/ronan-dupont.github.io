@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: optimorph
+Version: 0.1.0
+Summary: This is the OptiMorph version in 1D working in a cluster using SWAN or XBeach.
+Home-page: UNKNOWN
+Author: ronan-dupont
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: <=3.12
+
+# OptiMorph 1D
+
+This is the OptiMorph version in 1D working in a cluster using SWAN or XBeach.
+
+The params.dat file consists of the following parameters:
+0: T0 the wave period
+1: Hmax the maximum wave height off shore
+2: h0 the depth off shore
+3: Omega: The domain length
+4: Number of iteration
+5: Mobility coefficient, defaut = 0.001
+6: Type of bathymetry : defaut = 0 (linear)
+7: #Maximum slope : defaut = 0.2
+8: Cost function, defaut = 1
+9: hydrodynamic model : 1 = shoaling, 2 = swan, 3 = XBeach
+10: hydrodynamic mode: static - 0= constant forcing, 1 = dynamic forcing
+11: gamma the breaking coefficient
+12: geotube or not: 0: off, 1: on
+13: geotube position [m]
+14: geotube length [m]
+15: geotube height [m]
+
+
+## Installation
+
+Required **python3.8**
+
+external product:
+    - with hydro_mode 2 need **swanrun**
+    - hydro_mode 3 need **xbeach**
+
+
+## pending bug
+
+- id_cost_fct: 4, 5, 6, 7, 10
+  =>   NameError: name 'u_t' is not defined
+
+- id_cost_fct: 8, 9, 11
+  =>   NameError: name 'tau_t' is not defined
+
+- bathy_type: 3
+  NameError: name 'pdf' is not defined
+
+- bathy_type: 4, 11, 12, 13, 14, 15, 16, 17
+  ValueError: could not broadcast input array from shape (41,) into shape (0,)
+- bathy_type: 18
+  ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+

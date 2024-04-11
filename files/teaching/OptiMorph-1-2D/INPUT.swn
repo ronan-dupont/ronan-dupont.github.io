@@ -1,0 +1,59 @@
+PROJECT 'maupiti1D' 'HOE'
+
+$ Setting the configuration
+$##########################
+
+SET LEVEL 0.0 NOR 90 INRHOG 1 
+MODE STATIONARY ONEDIMENSIONAL
+COORDINATES CARTESIAN
+
+
+$ Definition of the grid/ bottom condition
+$#########################################
+
+$     REGULAR [xpc] [ypc] [alpc] [xlenc] [ylenc] [mxc] [myc]         [mdc]  [flow]  [fhigh] [msc]
+CGRID REGULAR 0 0 0 640 0 639 0 CIRCLE 12 0.02 0.4 36
+
+$ INPGRID BOTTOM REGULAR  [xpinp] [ypinp] [alpinp] [mxinp] [myinp] [dxinp] [dyinp]
+INPGRID BOTTOM REGULAR 0 0 0 639 0 1 0
+
+
+READINP BOTTOM -1 'psi.dat' 3 0 FREE
+
+
+$ Setting physical quantities for the simulation
+$###############################################
+$ DIFFRACtion 1 0.2    
+OFF QUAD
+GEN3
+BREAKING BKD 1 0.55 7.59 -8.06 8.09
+TRIAD
+
+$ Definition of forcing conditions
+$#################################
+
+BOUND SHAPESPEC JONSWAP 3.30 PEAK DSPR DEGREES
+
+$                             PAR [hs]  [per] [dir] [dd]	
+BOUNDSPEC SIDE West CON PAR 0.09524036882111805 6 0 20
+
+$ Si on met 20, on réduit le nombre de basse fréquence qui est à Nan (-999).
+
+$ Definition of output features
+$##############################
+
+
+CURVE 'profil' 0 0 639 639 0
+TABLE 'profil' HEADER 'swan_output_HSIG.dat' HSIGN
+TABLE 'profil' HEADER 'swan_output_T0.dat' TM01
+
+
+$ Calculating waves
+$####################
+
+COMPUTE
+STOP
+$
+$ Fin du calcul
+$#############################
+STOP

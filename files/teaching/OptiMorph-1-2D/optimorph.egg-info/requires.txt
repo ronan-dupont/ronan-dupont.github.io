@@ -1,0 +1,10 @@
+Pillow
+imageio
+matplotlib
+numpy
+olefile
+opencv-python
+pandas
+pyyaml
+scipy
+xarray
