@@ -12,7 +12,7 @@ This year's NuMerics2024 (Numerical Methods for Problems in Fluid Dynamics) was 
 
 The congress was held in the university of Napoli. 
 
-My work involved our optimorph model forced by a wave-to-wave resolution model (Shallow Water) [[PDF]](http://ronan-dupont.github.io/files/presentation/numerics2024.pdf)
+My work was entitled Numerical solution of Mild-slope equation using Virtual Element Method [[PDF]](http://ronan-dupont.github.io/files/presentation/numerics2024.pdf)
 
 Conference information: [https://numerics2024.sciencesconf.org](https://numerics2024.sciencesconf.org)
 
