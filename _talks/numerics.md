@@ -14,6 +14,6 @@ The congress was held in the university of Napoli.
 
 My work was entitled Numerical solution of Mild-slope equation using Virtual Element Method [[PDF]](http://ronan-dupont.github.io/files/presentation/numerics2024.pdf).
 
-Conference information: [https://numerics2024.sciencesconf.org](https://numerics2024.sciencesconf.org)
+Conference information: [https://numerics2024.sciencesconf.org](https://numerics2024.sciencesconf.org).
 
 
