@@ -8,13 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in applied mathematics for the numerical simulation of physics. In my case, I work in wave-morphodynamic coupling of the coastline by minimization principle. I am under the supervision of Pr. Mohammadi Bijan and Pr. Bouchette Fréderic between the Geosciences and IMAG laboratories in Montpellier.
+I hold a PhD in applied mathematics, which I obtained on September 30th, 2024. My research focuses on the numerical simulation of physics. During my PhD, I worked on wave-morphodynamic coupling of the coastline using minimization principles. I was supervised by Pr. Mohammadi Bijan and Pr. Bouchette Fréderic, working between the Geosciences and IMAG laboratories in Montpellier.
 
 You will find on my webpage my publications, talks, courses and my CV.
 
 Research Topic
 ======
 
-My research topic is between physics (hydro-morphodynamics) and mathematics (optimization methods). It consists in developing a new approach to model morphodynamic displacements by a GLOBAL approach. Traditionally, morphodynamic models solve the physics equations LOCALLY at the grain scale (transports). 
+My PhD research topic was between physics (hydro-morphodynamics) and mathematics (optimization methods). It involved developing a new approach to model morphodynamic displacements using a global method. Traditionally, morphodynamic models solved the physics equations locally at the grain scale (transport models).
 
-This subject leads me to carry out advanced numerical-mathematical developments that will lead us to publish a low-complexity version of our code. The morphodynamic code we are developing is very valuable from a phenomenological point of view. Indeed, it manages to reproduce physical phenomena that no other models manages to do (creation of sedimentary bar). It has the ambition to be published and coupled with any hydrodynamic model.
+This research led me to carry out advanced numerical and mathematical developments, which resulted in a low-complexity version of our code. The morphodynamic code we developed proved to be very valuable from a phenomenological point of view. It successfully reproduced physical phenomena, such as the creation of sedimentary bars, that no other models had achieved. The code has been designed to be coupled to any hydrodynamic model.
+
+Additionally, I am applying the Virtual Element Method (VEM) to the Helmholtz equation, a key equation for modeling wave propagation in various contexts. The VEM allows for highly flexible mesh handling, which is particularly advantageous in complex geometries.
