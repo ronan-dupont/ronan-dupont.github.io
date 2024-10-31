@@ -7,7 +7,7 @@ date: 2024-09-30
 venue: 'University of Montpellier'
 paperurl: ''
 
-citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. In: University of Montpellier.
+citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. In: University of Montpellier.'
 ---
 In the face of climate change, it has become crucial to understand and anticipate coastal phenomena such as beach erosion. 
 
