@@ -18,5 +18,5 @@ Thanks to mathematical methods, we were able to make our model generic and there
 Tested and validated on laboratory cases, this model can be used to optimize the design of coastal structures, reducing the effect of waves, and thus contribute to coastal management and protection.
 
 
-[[Download paper here]](http://ronan-dupont.github.io/files/manuscript_final.pdf)
+[[Download manuscript here]](http://ronan-dupont.github.io/files/manuscript_final.pdf)
 
