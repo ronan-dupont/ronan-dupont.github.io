@@ -1,9 +1,9 @@
 ---
 title: "An Arbitrary-Order Virtual Element Method for the Helmholtz Equation Applied to Wave Field Calculation in Port"
 collection: publications
-permalink: /publication/2025_vem-helmholtz
+permalink: /publication/2025-vem-helmholtz
 excerpt: ''
-date: 2025-XX-XX
+date: 2025-01-01
 venue: 'DRAFT'
 paperurl: ''
 
