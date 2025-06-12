@@ -18,8 +18,9 @@ TP1: Les bases du langage Python
 
 3) Palindrome - lire un fichier
 
-[Subject here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01.pdf)
-[Correction here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01_correction.pdf)
+[[Subject here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01.pdf)
+
+[[Correction here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-01_correction.pdf)
 
 TP2: Initiation au langage orienté objet
 ======
@@ -29,8 +30,9 @@ TP2: Initiation au langage orienté objet
 
 3) Création d’une classe de nuage de points
 
-[Subject here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-02.pdf)
-[Correction here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-02_correction.pdf)
+[[Subject here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-02.pdf)
+
+[[Correction here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-02_correction.pdf)
 
 TP3: Les bases du langage Python
 ======
@@ -38,8 +40,9 @@ TP3: Les bases du langage Python
 
 2) Cryptage de César, [File for question 9](http://ronan-dupont.github.io/files/teaching/TP03_file_Q9.txt)
 
-[Subject here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03.pdf)
-[Correction here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03_correction.pdf)
+[[Subject here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03.pdf)
+
+[[Correction here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-03_correction.pdf)
 
 TP4: Les bases du langage Python - Examen blanc
 ======
@@ -47,5 +50,6 @@ TP4: Les bases du langage Python - Examen blanc
 
 2) Suite de Fibonacci
 
-[Subject here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-04.pdf)
-[Correction here](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-04_correction.pdf)
+[[Subject here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-04.pdf)
+
+[[Correction here]](http://ronan-dupont.github.io/files/teaching/HAT004_M1_TP-04_correction.pdf)
