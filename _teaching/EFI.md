@@ -15,6 +15,8 @@ Quelques sujets pour les étudiants de l'école française internationale de Phn
 
 [[Subject here]](http://ronan-dupont.github.io/files/teaching/enigmes_3E_EFI_2025.pdf)
 
+[[Correction here]](http://ronan-dupont.github.io/files/teaching/enigmes_3E_EFI_2025_correction.pdf)
+
 
 1 ER : Programmation Python
 ======
