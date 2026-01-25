@@ -5,7 +5,7 @@ type: "High/Middle School"
 permalink: /teaching/EFI
 venue: "École Française Internationale Phnom Penh"
 date: 2025-06-01
-location: "Phnom Penh, Cambodia"
+location: "Nagoya, Japan"
 ---
 Quelques sujets pour les étudiants de l'école française internationale de Phnom Penh.
 
