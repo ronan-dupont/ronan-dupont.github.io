@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "講演・発表"
+permalink: /ja/talks/
+lang: ja
+translation_key: talks
+author_profile: true
+---
+
+<p class="archive-intro">応用数学、沿岸モデリング、科学技術計算に関する講演、ポスター発表、ワークショップの一覧です。</p>
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">これまでに発表を行った場所の地図を見る。</a></p>
+
+{% endif %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-localized.html %}
+{% endfor %}

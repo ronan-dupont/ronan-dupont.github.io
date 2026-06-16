@@ -35,7 +35,14 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.type or page.venue or page.location %}
+          <p class="metadata-pills">
+            {% if page.date %}<span>{{ page.date | date: "%Y" }}</span>{% endif %}
+            {% if page.type %}<span>{{ page.type }}</span>{% endif %}
+            {% if page.venue %}<span>{{ page.venue }}</span>{% endif %}
+            {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+          </p>
+        {% endif %}
 
         </header>
       {% endunless %}

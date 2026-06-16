@@ -35,9 +35,18 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="metadata-pills">
+            {% if page.date %}<span>{{ page.date | date: "%Y" }}</span>{% endif %}
+            {% if page.type %}<span>{{ page.type }}</span>{% endif %}
+            {% if page.venue %}<span>{{ page.venue }}</span>{% endif %}
+            {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+          </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="metadata-pills">
+            {% if page.date %}<span>{{ page.date | date: "%Y" }}</span>{% endif %}
+            {% if page.venue %}<span>{{ page.venue }}</span>{% endif %}
+            {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+          </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}

@@ -10,4 +10,30 @@ main:
     url: /teaching/    
     
   - title: "CV"
-    url: /files/Curriculum_Vitae_Ronan_Dupont.pdf
+    url: /cv/
+
+fr:
+  - title: "Publications"
+    url: /fr/publications/
+
+  - title: "Conférences"
+    url: /fr/talks/
+
+  - title: "Enseignement"
+    url: /fr/teaching/
+
+  - title: "CV"
+    url: /cv-fr/
+
+ja:
+  - title: "研究業績"
+    url: /ja/publications/
+
+  - title: "講演"
+    url: /ja/talks/
+
+  - title: "教育"
+    url: /ja/teaching/
+
+  - title: "CV"
+    url: /cv-ja/

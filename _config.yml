@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Ronan Dupont"
 title_separator          : "-"
 name                     : &name "Ronan Dupont"
-description              : &description "That's my description"
-url                      :
+description              : &description "Research website of Ronan Dupont: applied mathematics, numerical linear algebra, coastal morphodynamics and scientific computing."
+url                      : "https://ronan-dupont.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : 
+repository               : "ronan-dupont/ronan-dupont.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -83,7 +83,11 @@ author:
   name             : "Ronan Dupont"
   avatar           : "profile.png"
   bio              : "PhD in Applied Mathematics for Computational Physics"
+  bio_fr           : "Docteur en mathématiques appliquées pour la physique numérique"
+  bio_ja           : "計算物理のための応用数学博士"
   location         : "Nagoya, Japan"
+  location_fr      : "Nagoya, Japon"
+  location_ja      : "名古屋, 日本"
   employer         :
   pubmed           : 
   googlescholar    : 

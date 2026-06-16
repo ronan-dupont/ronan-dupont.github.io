@@ -2,8 +2,12 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
+lang: en
+translation_key: talks
 author_profile: true
 ---
+
+<p class="archive-intro">Selected presentations, posters and workshops related to applied mathematics, coastal modelling and scientific computing.</p>
 
 {% if site.talkmap_link == true %}
 
@@ -12,5 +16,5 @@ author_profile: true
 {% endif %}
 
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% include archive-single-localized.html %}
 {% endfor %}

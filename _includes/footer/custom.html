@@ -1,12 +1,11 @@
 <!-- start custom footer snippets -->
-<body>
-    <div style="display: flex; align-items: center;">
-        <img src="/images/avatar_2.png" alt=""  style="width: 102px; height: auto; margin-right: 10px;">
-        <div>
-            <p style="margin-top:3px;margin-bottom:3px;">Contact me:</p>
-            <p style="margin-top:3px;margin-bottom:3px;">r-dupont@na.nuap.nagoya-u.ac.jp</p>
-			<p style="margin-top:3px;margin-bottom:3px;">+33 6 70 90 88 08</p>
-        </div>
-    </div>
-</body>
+{% assign footer_lang = page.lang | default: "en" %}
+<div class="site-contact">
+  <img src="/images/avatar_2.png" alt="" class="site-contact__avatar">
+  <div class="site-contact__body">
+    <p class="site-contact__label">{% if footer_lang == "ja" %}連絡先{% elsif footer_lang == "fr" %}Contact{% else %}Contact{% endif %}</p>
+    <p><a href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">r-dupont@na.nuap.nagoya-u.ac.jp</a></p>
+    <p><a href="tel:+33670908808">+33 6 70 90 88 08</a></p>
+  </div>
+</div>
 <!-- end custom footer snippets -->

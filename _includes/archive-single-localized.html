@@ -1,0 +1,39 @@
+{% include base_path %}
+
+{% assign page_lang = page.lang | default: "en" %}
+{% assign title_key = "title_" | append: page_lang %}
+{% assign type_key = "type_" | append: page_lang %}
+{% assign venue_key = "venue_" | append: page_lang %}
+{% assign location_key = "location_" | append: page_lang %}
+{% assign excerpt_key = "excerpt_" | append: page_lang %}
+{% assign localized_title = post[title_key] | default: post.title %}
+{% assign localized_type = post[type_key] | default: post.type %}
+{% assign localized_venue = post[venue_key] | default: post.venue %}
+{% assign localized_location = post[location_key] | default: post.location %}
+{% assign localized_excerpt = post[excerpt_key] | default: post.excerpt %}
+{% if page_lang == "fr" %}
+  {% assign date_label = "Année" %}
+{% elsif page_lang == "ja" %}
+  {% assign date_label = "年" %}
+{% else %}
+  {% assign date_label = "Year" %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item archive__item--localized" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ localized_title }}</a>
+    </h2>
+
+    <p class="page__meta">
+      {% if post.date %}<span>{{ date_label }} {{ post.date | date: "%Y" }}</span>{% endif %}
+      {% if localized_type %}<span>{{ localized_type }}</span>{% endif %}
+      {% if localized_venue %}<span>{{ localized_venue }}</span>{% endif %}
+      {% if localized_location %}<span>{{ localized_location }}</span>{% endif %}
+    </p>
+
+    {% if localized_excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ localized_excerpt | markdownify | strip_html }}</p>
+    {% endif %}
+  </article>
+</div>

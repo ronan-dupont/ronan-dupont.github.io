@@ -2,11 +2,15 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
+lang: en
+translation_key: teaching
 author_profile: true
 ---
 
 {% include base_path %}
 
+<p class="archive-intro">Teaching material, practical sessions and courses developed for mathematics, numerical modelling and programming.</p>
+
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% include archive-single-localized.html %}
 {% endfor %}

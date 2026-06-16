@@ -1,11 +1,21 @@
 ---
 title: "PhD Defense"
+title_fr: "Soutenance de doctorat"
+title_ja: "博士論文公聴会"
 collection: talks
 type: "Presentation"
+type_fr: "Présentation"
+type_ja: "発表"
 permalink: /talks/phd_defense
 venue: "PhD Defense"
+venue_fr: "Soutenance de doctorat"
+venue_ja: "博士論文公聴会"
 date: 2024-09-30
 location: "Montpellier, France"
+location_fr: "Montpellier, France"
+location_ja: "モンペリエ, フランス"
+excerpt_fr: "Soutenance de doctorat à Montpellier sur le couplage vague-morphodynamique du littoral par principes de minimisation."
+excerpt_ja: "最小化原理に基づく沿岸域の波浪・地形変化結合モデルに関する博士論文公聴会。"
 ---
 
 On September 30, 2024, I defended my thesis in Montpellier.

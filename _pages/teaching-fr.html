@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Enseignement"
+permalink: /fr/teaching/
+lang: fr
+translation_key: teaching
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="archive-intro">Supports d'enseignement, travaux pratiques et cours développés en mathématiques, modélisation numérique et programmation.</p>
+
+{% for post in site.teaching reversed %}
+  {% include archive-single-localized.html %}
+{% endfor %}

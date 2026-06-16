@@ -138,6 +138,48 @@ fr-BE:
 fr-CH:
   <<: *DEFAULT_FR
 
+# Japanese
+# -----------------
+ja: &DEFAULT_JA
+  page                       : "ページ"
+  pagination_previous        : "前へ"
+  pagination_next            : "次へ"
+  breadcrumb_home_label      : "ホーム"
+  breadcrumb_separator       : "/"
+  toc_label                  : "このページ"
+  ext_link_label             : "直接リンク"
+  less_than                  : "未満"
+  minute_read                : "分で読めます"
+  share_on_label             : "共有"
+  meta_label                 :
+  tags_label                 : "タグ:"
+  categories_label           : "カテゴリー:"
+  date_label                 : "公開日:"
+  comments_label             : "コメントする"
+  comments_title             : "コメント"
+  more_label                 : "詳しく見る"
+  related_label              : "関連項目"
+  follow_label               : "リンク"
+  feed_label                 : "フィード"
+  powered_by                 : "Powered by"
+  website_label              : "ウェブサイト"
+  email_label                : "メール"
+  recent_posts               : "最近の投稿"
+  undefined_wpm              : "_config.yml に words_per_minute が定義されていません"
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              : "読み込み中..."
+ja-JP:
+  <<: *DEFAULT_JA
+
 # Turkish
 # -----------------
 tr: &DEFAULT_TR

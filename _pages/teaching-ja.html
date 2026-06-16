@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "教育"
+permalink: /ja/teaching/
+lang: ja
+translation_key: teaching
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="archive-intro">数学、数値モデリング、プログラミングに関する教材、演習資料、講義資料をまとめています。</p>
+
+{% for post in site.teaching reversed %}
+  {% include archive-single-localized.html %}
+{% endfor %}

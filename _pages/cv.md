@@ -1,10 +1,9 @@
 ---
 layout: archive
 title: "CV - Ronan Dupont"
-permalink: /files/Curriculum_Vitae_Ronan_Dupont.pdf
+permalink: /cv-legacy/
 author_profile: true
-redirect_from:
-  - /resume
+published: false
 ---
 
 {% include base_path %}

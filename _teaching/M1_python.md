@@ -1,11 +1,21 @@
 ---
 title: "Python Courses"
+title_fr: "Cours de Python"
+title_ja: "Python講義"
 collection: teaching
 type: "Master course"
+type_fr: "Cours de master"
+type_ja: "修士課程講義"
 permalink: /teaching/M1_python
-venue: "University of Montpelleir, Master 1 - Coastal Engineering"
+venue: "University of Montpellier, Master 1 - Coastal Engineering"
+venue_fr: "Université de Montpellier, Master 1 - Ingénierie côtière"
+venue_ja: "モンペリエ大学, 修士1年 - 沿岸工学"
 date: 2022-10-01
 location: "Montpellier, France"
+location_fr: "Montpellier, France"
+location_ja: "モンペリエ, フランス"
+excerpt_fr: "Cycle de travaux pratiques pour acquérir les bases du langage Python et devenir autonome en programmation scientifique."
+excerpt_ja: "Pythonの基礎と科学技術計算のためのプログラミングを学ぶ実習資料。"
 ---
 
 This 4 session lesson will allow you to become autonomous in Python from scratch.
