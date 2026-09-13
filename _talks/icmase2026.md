@@ -12,6 +12,7 @@ date: 2026-09-14
 cover: /images/talks/icmase2026-cover.jpg
 slides_handout: "/files/presentation/ICMASE2026_ultra_handout.pdf?v=20"
 slides_progressive: "/files/presentation/ICMASE2026_ultra_progressive.pdf?v=20"
+poster: "/files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf?v=19"
 excerpt: "An extension of GPBiCG(m, ℓ) and preliminary adaptive parameter strategies for nonsymmetric linear systems."
 excerpt_fr: "Une extension de GPBiCG(m, ℓ) et des stratégies adaptatives préliminaires pour les systèmes linéaires non symétriques."
 excerpt_ja: "非対称線形方程式系に対するGPBiCG(m, ℓ)の拡張と予備的な適応パラメータ戦略。"
@@ -25,9 +26,10 @@ Our numerical study compares the method on eight matrices, with and without ILU(
 
 The appendix includes the complete GPBiCG algorithm and the phase rules for GPBiCG(m, ℓ, k).
 
-You can find the presentation here:
+You can find the presentation and associated Moonshot poster here:
 
 - [Slides — handout PDF]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }}?v=20)
 - [Slides — progressive presentation PDF]({{ '/files/presentation/ICMASE2026_ultra_progressive.pdf' | relative_url }}?v=20)
+- [Associated Moonshot poster — A0 portrait PDF]({{ '/files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf' | relative_url }}?v=19)
 
 [![Title slide of Ronan Dupont’s ICMASE 2026 presentation on GPBiCG(m, ℓ, k)]({{ '/images/talks/icmase2026-cover.jpg' | relative_url }})]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }}?v=20)

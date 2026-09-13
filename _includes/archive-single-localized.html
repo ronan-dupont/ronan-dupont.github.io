@@ -16,16 +16,19 @@
   {% assign pdf_label = "Lire le PDF" %}
   {% assign handout_label = "PDF complet" %}
   {% assign progressive_label = "PDF progressif" %}
+  {% assign poster_label = "Poster Moonshot · A0" %}
 {% elsif page_lang == "ja" %}
   {% assign date_label = "年" %}
   {% assign pdf_label = "PDFを読む" %}
   {% assign handout_label = "配布用PDF" %}
   {% assign progressive_label = "段階表示PDF" %}
+  {% assign poster_label = "Moonshotポスター · A0" %}
 {% else %}
   {% assign date_label = "Year" %}
   {% assign pdf_label = "Read PDF" %}
   {% assign handout_label = "Handout PDF" %}
   {% assign progressive_label = "Progressive PDF" %}
+  {% assign poster_label = "Moonshot poster · A0" %}
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -46,7 +49,7 @@
     {% endif %}
     {% assign has_paper = false %}
     {% if post.paperurl and post.paperurl != empty %}{% assign has_paper = true %}{% endif %}
-    {% if has_paper or post.slides_handout or post.slides_progressive %}
+    {% if has_paper or post.slides_handout or post.slides_progressive or post.poster %}
       <div class="archive__actions">
         {% if has_paper %}
           <a class="archive__download" href="{{ post.paperurl | relative_url | escape }}" aria-label="{{ pdf_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ pdf_label }}</a>
@@ -56,6 +59,9 @@
         {% endif %}
         {% if post.slides_progressive %}
           <a class="archive__download" href="{{ post.slides_progressive | relative_url | escape }}" aria-label="{{ progressive_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ progressive_label }}</a>
+        {% endif %}
+        {% if post.poster %}
+          <a class="archive__download" href="{{ post.poster | relative_url | escape }}" aria-label="{{ poster_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ poster_label }}</a>
         {% endif %}
       </div>
     {% endif %}
