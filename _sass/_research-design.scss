@@ -1,0 +1,99 @@
+/* A blue research identity: luminous linework, clear type, useful access. */
+html { background: #f4f7fb; }
+body { background: transparent; }
+body::before, body::after { display: none; }
+.masthead { background: rgba(255,255,255,.96); box-shadow: 0 2px 16px rgba(16,39,70,.035); }
+.masthead__menu-item a:hover { transform: none; }
+.page, .archive { background: #fff; backdrop-filter: none; border-color: #dfe7ef; }
+.sidebar { box-shadow: none; }
+a:focus-visible { outline: 3px solid #1684bb; outline-offset: 4px; }
+#main.home-page { max-width: 1240px; padding: 0 1.25rem; margin: 1.6rem auto 3rem; float: none; }
+.home-hero {
+  position: relative; isolation: isolate; overflow: hidden; display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem; gap: 3rem; align-items: center;
+  padding: 3.5rem 3rem; border-radius: 22px; color: #fff;
+  background: #081d3b; box-shadow: 0 18px 45px rgba(12,38,72,.13);
+}
+.home-hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: url('../../images/research-filaments.svg') right center / cover no-repeat,
+    radial-gradient(ellipse at 92% 90%, #164d78, transparent 70%), linear-gradient(120deg,#081a35,#102e52);
+}
+.home-hero__copy { min-width: 0; }
+.home-hero .home-hero__kicker { margin: 0 0 1.15rem; max-width: 31rem; color: #96dfea; font-size: 14px; font-weight: 650; line-height: 1.65; letter-spacing: .065em; text-transform: uppercase; }
+.home-hero h1 { margin: 0 0 1.15rem; color: #fff; font-size: clamp(2.3rem, 5.8vw, 4rem); font-weight: 760; letter-spacing: -.055em; line-height: 1.04; }
+.home-hero h1 span { color: #5adbef; }
+.home-hero__intro { margin: 0; max-width: 34rem; color: #d5e4f3; font-size: 17px; line-height: 1.75; }
+.home-hero__actions { display: flex; gap: .65rem; flex-wrap: wrap; margin-top: 1.65rem; }
+.home-hero__actions .btn { display: inline-flex; align-items: center; min-height: 46px; padding: .68rem 1rem; margin: 0; font-size: 14px; font-weight: 700; border: 1px solid #597694; border-radius: 8px; color: #fff; background: #173557; box-shadow: none; text-decoration: none; }
+.home-hero__actions .btn--primary { color: #08283b !important; background: #82e4ef; border-color: #82e4ef; }
+.home-hero__actions .btn:hover { transform: none; background: #284b6d; }
+.home-hero__actions .btn--primary:hover { background: #b0f2f7; }
+.home-hero a:focus-visible { outline-color: #85e7f4; }
+.home-hero__portrait { position: relative; padding: 1rem 0; text-align: center; }
+.home-hero__portrait img { display: block; width: 12.5rem; height: 12.5rem; object-fit: cover; border-radius: 50%; margin: 0 auto 1rem; padding: 5px; border: 1px solid #83c1de; background: #12345a; box-shadow: 0 0 0 10px rgba(93,185,222,.08), 0 0 0 25px rgba(93,185,222,.04); }
+.home-hero__portrait p { margin: 1.5rem 0 .4rem; font-size: 14px; color: #e5f2fa; line-height: 1.5; }
+.home-hero__portrait a { color: #91e5f1; font-size: 14px; text-decoration: none; }
+.home-hero__portrait a:hover { text-decoration: underline; }
+.home-research { margin: 2.2rem 0; }
+.home-section-title { margin: 0 0 1rem; font-size: 14px; color: #455e77; font-weight: 730; letter-spacing: .1em; text-transform: uppercase; }
+.home-page .research-grid { margin: 0; gap: 1rem; }
+.home-page .research-card { padding: 1.4rem; min-height: 0; background: #fff; border: 1px solid #d7e3ed; border-top: 3px solid #2076c1; border-radius: 4px 4px 12px 12px; box-shadow: none; }
+.home-page .research-card:nth-child(2) { border-top-color: #1194ae; }
+.home-page .research-card:nth-child(3) { border-top-color: #496d94; }
+.home-page .research-card > span { display: block; padding: 0; width: auto; height: auto; margin: 0 0 .8rem; background: transparent; border: 0; color: #5b7288; font-size: 14px; font-weight: 600; }
+.home-page .research-card h3 { color: #16385b; font-size: 1.04rem; line-height: 1.3; margin: 0 0 .65rem; }
+.home-page .research-card p { margin: 0; color: #53687d; font-size: 16px; line-height: 1.65; }
+.home-page .research-card:hover { transform: none; border-color: #9abbd3; box-shadow: 0 5px 18px rgba(20,47,77,.04); }
+.home-page .latest-talk { grid-template-columns: minmax(0,1fr) 17rem; padding: 1.7rem 1.7rem 1.7rem 2rem; gap: 3rem; border-radius: 14px; border-left: 1px solid #cbddeb; background: #e8f1fa; margin: 0 0 2.5rem; }
+.home-page .latest-talk h2 { max-width: 35rem; font-size: 1.45rem; line-height: 1.35; letter-spacing: -.02em; }
+.home-page .latest-talk__label { font-size: 14px; margin-bottom: .8rem; }
+.home-page .latest-talk__action { display: inline-block; font-size: 16px; margin-top: .45rem; }
+.home-page .latest-talk img { border-radius: 8px; }
+.home-reading { max-width: 48rem; margin: 0 auto; padding: .5rem 0 1rem; font-size: .95rem; line-height: 1.8; color: #3e5369; }
+.home-reading h2 { color: #173655; font-size: 1.5rem; letter-spacing: -.02em; margin: 1.25rem 0 1rem; }
+.home-reading p { margin-bottom: 1.1rem; }
+.archive__item { padding: 1.35rem 1.4rem; box-shadow: none; background: #fff; border-color: #dbe5ed; border-left-color: #b8d5e8; }
+.archive__item:hover { transform: none; box-shadow: 0 5px 18px rgba(20,47,77,.04); }
+.archive .archive__item-title { margin: 0 0 .55rem; font-size: 1.16rem; letter-spacing: -.015em; }
+.archive__item .page__meta { font-size: 14px; }
+.archive__item-excerpt { font-size: 16px; color: #506479; }
+.archive__actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
+.archive .archive__download { display: inline-flex; align-items: center; gap: .3rem; min-height: 44px; padding: .4rem .8rem; color: #165b91; background: #eef6fc; border: 1px solid #c8dfed; border-radius: 7px; text-decoration: none; font-size: 14px; font-weight: 650; }
+.archive__download:hover { background: #dcedf8; color: #103e64; text-decoration: none; }
+.contact-panel { display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.75rem; margin: 1.5rem 0 2rem; }
+.contact-panel > div { min-width: 0; }
+.contact-panel h2 { font-size: 1.1rem; margin: .4rem 0 1rem; }
+.contact-panel .contact-link { display: flex; align-items: center; gap: .6rem; min-height: 48px; font-size: 16px; text-decoration: none; }
+.contact-affiliation { padding: 1.1rem; border-radius: 10px; background: #f0f6fb; }
+.contact-affiliation p { font-size: 16px; line-height: 1.7; }
+.contact-profiles h2 { font-size: 1.1rem; }
+@media (max-width: 1024px) {
+  .home-hero { padding: 2.5rem 2rem; gap: 1.5rem; grid-template-columns: minmax(0,1fr) 12rem; }
+  .home-hero__portrait img { width: 10rem; height: 10rem; }
+  .home-page .latest-talk { grid-template-columns: minmax(0,1fr) 13rem; gap: 1.5rem; }
+}
+@media (max-width: 768px) {
+  #main.home-page { padding: 0 1rem; margin-top: 1rem; }
+  .home-hero { grid-template-columns: minmax(0,1fr); padding: 2rem 1.5rem; gap: 1.6rem; }
+  .home-hero::before { background-image: linear-gradient(90deg,rgba(8,29,59,.88),rgba(8,29,59,.55)), url('../../images/research-filaments.svg'), linear-gradient(120deg,#081a35,#164368); }
+  .home-hero__portrait { display: grid; grid-template-columns: 64px minmax(0,1fr); column-gap: 1.1rem; padding: .3rem 0 0; text-align: left; align-items: center; }
+  .home-hero__portrait img { grid-row: 1 / 3; width: 64px; height: 64px; margin: 0; padding: 2px; box-shadow: 0 0 0 5px rgba(93,185,222,.08); }
+  .home-hero__portrait p { margin: 0; }
+  .home-hero__portrait a { align-self: start; }
+  .home-hero h1 { font-size: clamp(2.5rem, 8.6vw, 3.5rem); }
+  .home-hero__intro { font-size: 16px; }
+  .home-page .research-grid { grid-template-columns: minmax(0,1fr); gap: .7rem; }
+  .home-page .research-card { padding: 1.15rem; }
+  .home-page .research-card > span { margin-bottom: .5rem; }
+  .home-page .latest-talk { grid-template-columns: minmax(0,1fr); padding: 1.4rem; gap: 1.3rem; }
+  .home-page .latest-talk h2 { font-size: 1.25rem; }
+  .home-page .latest-talk img { max-width: 100%; }
+  .home-reading { padding: 0 .2rem; }
+  .contact-panel { grid-template-columns: minmax(0,1fr); }
+}
+@media print {
+  .home-hero { background: #fff; color: #12223a; box-shadow: none; border: 1px solid #b4c5d2; }
+  .home-hero::before { display: none; }
+  .home-hero h1, .home-hero p, .home-hero a { color: #12223a; }
+}

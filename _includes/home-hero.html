@@ -1,0 +1,16 @@
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home-hero__copy">
+    <p class="home-hero__kicker">{{ page.hero_kicker }}</p>
+    <h1 id="home-title">Ronan Dupont<span aria-hidden="true">.</span></h1>
+    <p class="home-hero__intro">{{ page.hero_intro }}</p>
+    <div class="home-hero__actions">
+      {% assign action_file = "home-actions-" | append: page.lang | append: ".html" %}
+      {% include {{ action_file }} %}
+    </div>
+  </div>
+  <div class="home-hero__portrait">
+    <img src="{{ '/images/profile.png' | relative_url }}" alt="Ronan Dupont" width="320" height="320" fetchpriority="high" decoding="async">
+    <p>{{ page.hero_affiliation }}</p>
+    <a href="{{ '/contact/' | relative_url }}">{% if page.lang == 'ja' %}お問い合わせ{% else %}Contact{% endif %} <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

@@ -5,7 +5,7 @@ permalink: /publication/2024_manuscript
 excerpt: ''
 date: 2024-09-30
 venue: 'University of Montpellier'
-paperurl: ''
+paperurl: "/files/manuscript_final.pdf"
 
 citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. In: University of Montpellier.'
 ---
