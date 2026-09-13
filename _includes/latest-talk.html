@@ -1,0 +1,16 @@
+{% assign latest_talk = site.talks | sort: "date" | last %}
+{% if latest_talk %}
+{% assign latest_lang = page.lang | default: "en" %}
+{% assign latest_title_key = "title_" | append: latest_lang %}
+{% assign latest_title = latest_talk[latest_title_key] | default: latest_talk.title %}
+<div class="latest-talk-wrap">
+<a class="latest-talk" href="{{ latest_talk.url | relative_url }}">
+  <div class="latest-talk__body">
+    <p class="latest-talk__label">{% if latest_lang == "fr" %}Dernière présentation{% elsif latest_lang == "ja" %}最近の発表{% else %}Latest presentation{% endif %}<span aria-hidden="true"> · </span><time datetime="{{ latest_talk.date | date: '%Y-%m-%d' }}">{{ latest_talk.date | date: "%d.%m.%Y" }}</time></p>
+    <h2>{{ latest_title }}</h2>
+    <span class="latest-talk__action">{% if latest_lang == "fr" %}Découvrir la présentation{% elsif latest_lang == "ja" %}発表とスライドを見る{% else %}Explore the presentation{% endif %}<span aria-hidden="true"> ↗</span></span>
+  </div>
+  {% if latest_talk.cover %}<img src="{{ latest_talk.cover | relative_url }}" alt="" width="1600" height="1200" loading="lazy" decoding="async">{% endif %}
+</a>
+</div>
+{% endif %}

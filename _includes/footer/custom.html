@@ -1,11 +1,18 @@
-<!-- start custom footer snippets -->
 {% assign footer_lang = page.lang | default: "en" %}
-<div class="site-contact">
-  <img src="/images/avatar_2.png" alt="" class="site-contact__avatar">
-  <div class="site-contact__body">
-    <p class="site-contact__label">{% if footer_lang == "ja" %}連絡先{% elsif footer_lang == "fr" %}Contact{% else %}Contact{% endif %}</p>
-    <p><a href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">r-dupont@na.nuap.nagoya-u.ac.jp</a></p>
-    <p><a href="tel:+33670908808">+33 6 70 90 88 08</a></p>
+<div class="footer-grid">
+  <div class="site-contact">
+    <img src="{{ '/images/avatar_2.png' | relative_url }}" alt="" class="site-contact__avatar" width="82" loading="lazy" decoding="async">
+    <div class="site-contact__body">
+      <p class="site-contact__label">{% if footer_lang == "ja" %}連絡先{% else %}Contact{% endif %}</p>
+      <a class="contact-link" href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">
+        <span class="contact-link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
+        <span>r-dupont@na.nuap.nagoya-u.ac.jp</span>
+      </a>
+      <a class="contact-link" href="tel:+33670908808">
+        <span class="contact-link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3H5a2 2 0 0 0-2 2c0 8.8 7.2 16 16 16a2 2 0 0 0 2-2v-3l-5-2-2 2a13 13 0 0 1-6-6l2-2-2-5Z"/></svg></span>
+        <span>+33 6 70 90 88 08</span>
+      </a>
+    </div>
   </div>
+  {% include visitor-counter.html %}
 </div>
-<!-- end custom footer snippets -->

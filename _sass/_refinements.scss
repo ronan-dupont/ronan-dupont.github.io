@@ -1,0 +1,87 @@
+/* Refinements shared by the three language versions. */
+:root {
+  --moon-blue: #1262b8;
+  --moon-cyan: #087e99;
+  --moon-muted: #51647a;
+  --moon-shadow: 0 14px 40px rgba(24, 46, 76, .065);
+}
+body { padding-bottom: 2.5rem; }
+#main { margin-top: 2rem; }
+.page, .archive { background: rgba(255, 255, 255, .92); }
+.page__title { font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.2; letter-spacing: -.025em; }
+.page__content { line-height: 1.65; }
+.page__content .btn { text-decoration: none; }
+.page__content img { border-radius: 12px; }
+.page__content a:focus-visible, .masthead a:focus-visible, .contact-link:focus-visible,
+button:focus-visible, .visitor-counter summary:focus-visible {
+  outline: 3px solid #1262b8; outline-offset: 4px;
+}
+.skip-link {
+  position: fixed; top: .75rem; left: 1rem; z-index: 9999;
+  padding: .65rem 1rem; border-radius: 8px; color: #fff; background: #103453;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; color: #fff; }
+.masthead__menu-item a[aria-current="page"] {
+  color: #103f70; background: #e6f2fa; box-shadow: inset 0 0 0 1px #c4deef;
+}
+.research-hero { padding: 1.25rem; }
+.research-hero p:not(.research-kicker) { line-height: 1.65; }
+.research-kicker { color: #16718a; }
+.latest-talk {
+  display: grid; grid-template-columns: minmax(0, 1fr) 11rem;
+  align-items: center; gap: 1.25rem; margin: 0 0 1.6rem;
+  padding: 1rem 1rem 1rem 1.2rem; border: 1px solid #cbddeb; border-left: 3px solid #1685b5;
+  border-radius: 14px; background: linear-gradient(115deg, #f5faff, #fff 70%);
+  text-decoration: none !important; transition: border-color 180ms, box-shadow 180ms;
+}
+.latest-talk:hover { border-color: #72adcc; box-shadow: 0 8px 25px rgba(24, 46, 76, .08); }
+.latest-talk__body { min-width: 0; }
+.latest-talk .latest-talk__label {
+  margin: 0 0 .5rem; font-size: .67rem; font-weight: 750; color: #526b82;
+  text-transform: uppercase; letter-spacing: .065em;
+}
+.latest-talk h2 { margin: 0 0 .55rem; padding: 0; border: 0; color: #173350; font-size: 1.02rem; line-height: 1.35; }
+.latest-talk__action { font-size: .75rem; font-weight: 720; color: #1262b8; }
+.latest-talk img { display: block; width: 100%; height: auto; border: 1px solid #e2ebf2; border-radius: 8px; box-shadow: 0 4px 15px rgba(24,46,76,.05); }
+.archive__item { border-left: 3px solid #d1e4ef; padding: 1.1rem 1.2rem; }
+.archive__item:hover { border-left-color: #1685b5; }
+.archive__item-title { line-height: 1.3; }
+.archive__item-excerpt { line-height: 1.6; }
+.page__footer { margin-top: 0; border-top: 1px solid #d4e3ed; background: linear-gradient(120deg, #f0f7fc, #f9fcff 60%, #edf6fb); }
+.page__footer footer { margin-top: 0; }
+.footer-grid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; max-width: 64rem; margin: 0 auto; padding: 1.5rem 0; }
+.site-contact { flex: 1 1 24rem; max-width: none; margin: 0; padding: 0; background: none; }
+.site-contact__body { min-width: 0; }
+.site-contact__label { margin: 0 0 .4rem !important; font-size: .85rem; letter-spacing: .01em; }
+.site-contact__avatar { width: 72px; flex-shrink: 0; }
+.site-contact .contact-link { display: flex; align-items: center; gap: .6rem; min-height: 2.2rem; font-size: .78rem; }
+.contact-link > span:last-child { overflow-wrap: anywhere; }
+.contact-link__icon { display: inline-grid; flex: 0 0 1.65rem; width: 1.65rem; height: 1.65rem; place-items: center; border: 1px solid #cfe0ec; border-radius: 9px; color: #1262b8; background: #fff; }
+.contact-link__icon svg { width: 1rem; height: 1rem; }
+.site-contact .contact-link:hover { color: #1262b8; text-decoration: none; }
+.site-contact .contact-link:hover > span:last-child { text-decoration: underline; text-underline-offset: .2em; }
+@media (min-width: 1024px) {
+  .page { padding-left: 0; padding-right: 0; }
+  .page .page__inner-wrap { float: none; max-width: 49rem; margin: 0 auto; padding: 2rem 2.3rem; }
+  .archive { padding: 2rem 2.3rem; }
+}
+@media (max-width: 600px) {
+  .latest-talk { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
+  .latest-talk img { max-width: 16rem; }
+  .footer-grid { gap: 1.1rem; padding: 1.3rem 0; }
+  .site-contact { gap: .55rem; flex-basis: 100%; }
+  .site-contact__avatar { width: 48px; }
+  .site-contact .contact-link { font-size: .72rem; }
+  .page__title { font-size: 1.65rem; }
+}
+
+/* The compact navigation uses the same controls as the desktop site. */
+#site-nav > button { border-radius: 9px; background: #1262b8; min-width: 44px; min-height: 44px; }
+
+@media (max-width: 768px) {
+  .sidebar { position: relative; top: 0; z-index: 10; overflow: visible; }
+  .sidebar::before { border-radius: inherit; }
+  .author__urls { left: auto; right: 0; }
+  .author__urls::before, .author__urls::after { left: auto; right: 1.35rem; }
+}

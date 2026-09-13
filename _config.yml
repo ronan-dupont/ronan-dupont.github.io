@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # No Google Analytics ID is configured; the visitor counter is separate.
   google:
     tracking_id          :
 
@@ -106,7 +106,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/ronan-dupont-805071171"
+  linkedin         : "ronan-dupont-805071171"
   orcid            : "https://orcid.org/0000-0003-2260-0755"
   pinterest        :
   soundcloud       :

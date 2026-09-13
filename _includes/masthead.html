@@ -26,7 +26,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button type="button" aria-label="{% if page_lang == 'ja' %}メニュー{% else %}Menu{% endif %}" aria-controls="navigation-overflow" aria-expanded="false"><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in nav_links %}
@@ -35,7 +35,7 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if page.url contains link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item language-switcher" aria-label="Language selector">
             <a class="{% if page_lang == 'en' %}active{% endif %}" href="{{ en_url | prepend: base_path }}">EN</a>
@@ -43,7 +43,7 @@
             <a class="{% if page_lang == 'ja' %}active{% endif %}" href="{{ ja_url | prepend: base_path }}">日本語</a>
           </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="navigation-overflow" class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

@@ -1,0 +1,7 @@
+{% assign counter_lang = page.lang | default: "en" %}
+<span class="visitor-counter" data-visitor-counter hidden>
+  <svg class="visitor-counter__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/></svg>
+  <span data-visitor-count></span>
+  <span>{% if counter_lang == 'fr' %}visiteurs estimés{% elsif counter_lang == 'ja' %}推定訪問者数{% else %}estimated visitors{% endif %}</span>
+  <a href="https://github.com/soxft/busuanzi" class="visitor-counter__info" aria-label="{% if counter_lang == 'fr' %}À propos du compteur de visiteurs{% elsif counter_lang == 'ja' %}訪問者カウンターについて{% else %}About the visitor counter{% endif %}" title="{% if counter_lang == 'fr' %}Estimation depuis le 14 septembre 2026 · Busuanzi{% elsif counter_lang == 'ja' %}2026年9月14日からの推定値 · Busuanzi{% else %}Estimate since September 14, 2026 · Busuanzi{% endif %}">ⓘ</a>
+</span>

@@ -16,6 +16,8 @@ author_profile: true
   </div>
 </section>
 
+{% include latest-talk.html %}
+
 Je suis docteur en mathématiques appliquées, diplôme obtenu le 30 septembre 2024. Je suis actuellement chercheur postdoctoral à l'Université de Nagoya (Japon), où je travaille en algèbre linéaire numérique sous la direction du Pr. Tomohiro Sogabe (曽我部 知広). Mes recherches se situent à l'interface entre l'algèbre numérique, la simulation numérique et le calcul scientifique. Pendant mon doctorat, j'ai travaillé sur le couplage vague-morphodynamique du littoral à partir de principes de minimisation, sous la direction du Pr. Bijan Mohammadi et du Pr. Frédéric Bouchette, entre les laboratoires Géosciences Montpellier et IMAG.
 
 Ce site rassemble mes publications, communications, supports d'enseignement et mon CV.

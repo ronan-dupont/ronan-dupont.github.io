@@ -19,12 +19,13 @@ redirect_from:
   </div>
 </section>
 
+{% include latest-talk.html %}
+
 I hold a PhD in applied mathematics, which I obtained on September 30th, 2024. I am currently a postdoctoral researcher at Nagoya University (Japan), working in numerical algebra under the supervision of Pr. Tomohiro Sogabe (曽我部 知広) and Pr. Shao-Liang Zhang (張 紹良). My research interests lie at the interface between numerical algebra, numerical simulation and scientific computing. During my PhD, I worked on wave-morphodynamic coupling of the coastline using minimization principles. I was supervised by Pr. Mohammadi Bijan and Pr. Bouchette Fréderic, working between the Geosciences and IMAG laboratories in Montpellier.
 
 You will find on my webpage my publications, talks, courses and my CV.
 
-Research Topic
-======
+## Research topics
 
 My PhD research topic was between physics (hydro-morphodynamics) and mathematics (optimization methods). It involved developing a new approach to model morphodynamic displacements using a global method. Traditionally, morphodynamic models solved the physics equations locally at the grain scale (transport models).
 

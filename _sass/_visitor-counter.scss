@@ -1,0 +1,17 @@
+.visitor-counter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .7rem;
+  color: #456175;
+  background: rgba(221, 239, 246, .55);
+  border: 1px solid rgba(39, 136, 164, .16);
+  border-radius: 999px;
+  font-size: .74rem;
+  line-height: 1.2;
+}
+.visitor-counter[hidden] { display: none; }
+.visitor-counter [data-visitor-count] { color: #163e55; font-variant-numeric: tabular-nums; font-weight: 700; }
+.visitor-counter__icon { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.visitor-counter__info { color: inherit; text-decoration: none; }
