@@ -47,3 +47,7 @@ The inherited /terms/ text describes analytics/comment services that are not ena
 ## Futuristic atmosphere refinement
 
 The full-width hero filaments are restored with a dark text veil, a cyan rim and a subtle portrait halo. The shared background uses static CSS halos and a grid masked toward the margins; the central reading area stays calm. Phone layouts simplify the background, and print removes all atmospheric pseudo-elements. No additional scripts, fonts or image requests are introduced. The numerical-linear-algebra illustration is now a decorative sparse matrix with column vectors, representing an abstract Ax = b without research data.
+
+## Academic identity and illustrated portrait
+
+The homepage name includes a responsive PhD suffix and the accessible name Ronan Dupont, PhD. The original avatar_2.png drawing is restored in the shared footer and in the localized Contact identity component. Its native size is 102 by 112 pixels; display sizes stay at or below that resolution. The footer image loads lazily and remains decorative beside the visible name. Contact uses a localized alternative description and keeps the existing contact details and professional links.

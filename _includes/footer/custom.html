@@ -1,7 +1,10 @@
 {% assign footer_lang = page.lang | default: 'en' %}
 <div class="studio-footer">
   <div class="studio-footer__top">
-    <div class="studio-footer__identity"><p class="studio-footer__name">Ronan Dupont<span aria-hidden="true">.</span></p><p>{% if footer_lang == 'fr' %}Mathématiques appliquées<br>Université de Nagoya, Japon{% elsif footer_lang == 'ja' %}応用数学<br>名古屋大学 · 日本{% else %}Applied mathematics<br>Nagoya University, Japan{% endif %}</p></div>
+    <div class="studio-footer__identity">
+      <div class="studio-footer__portrait" aria-hidden="true"><img src="{{ '/images/avatar_2.png' | relative_url }}" alt="" width="102" height="112" loading="lazy" decoding="async"></div>
+      <div class="studio-footer__identity-copy"><p class="studio-footer__name">Ronan Dupont <span class="studio-footer__degree">PhD</span></p><p>{% if footer_lang == 'fr' %}Mathématiques appliquées<br>Université de Nagoya, Japon{% elsif footer_lang == 'ja' %}応用数学<br>名古屋大学 · 日本{% else %}Applied mathematics<br>Nagoya University, Japan{% endif %}</p></div>
+    </div>
     <div class="site-contact"><p class="site-contact__label">{% if footer_lang == 'ja' %}連絡先{% else %}Contact{% endif %}</p>
       <a class="contact-link" href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">
         <span class="contact-link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>

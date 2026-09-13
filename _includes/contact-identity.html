@@ -1,0 +1,13 @@
+<section class="profile-page__contact-hero" aria-labelledby="contact-heading">
+  <div class="profile-page__contact-identity">
+    <div class="profile-page__contact-identity-copy">
+      <p class="profile-page__eyebrow">{{ include.eyebrow | escape }}</p>
+      <h2 id="contact-heading" class="profile-page__contact-name">Ronan Dupont, <span class="profile-page__contact-degree">PhD</span></h2>
+      <p class="profile-page__contact-invitation">{{ include.invitation | escape }}</p>
+    </div>
+    <div class="profile-page__contact-portrait">
+      <img src="{{ '/images/avatar_2.png' | relative_url }}" alt="{{ include.portrait_alt | escape }}" width="102" height="112" decoding="async">
+    </div>
+  </div>
+  <p class="profile-page__lead">{{ include.description | escape }}</p>
+</section>

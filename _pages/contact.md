@@ -9,11 +9,7 @@ profile_page: true
 ---
 
 <div class="profile-page profile-page--contact">
-  <section class="profile-page__contact-hero" aria-labelledby="contact-heading">
-    <p class="profile-page__eyebrow">Get in touch</p>
-    <h2 id="contact-heading" class="profile-page__lead-title">Let’s talk about research.</h2>
-    <p class="profile-page__lead">You can contact me about applied mathematics, scientific computing and teaching.</p>
-  </section>
+  {% include contact-identity.html eyebrow="Get in touch" invitation="Let’s talk about research." description="You can contact me about applied mathematics, scientific computing and teaching." portrait_alt="Illustrated portrait of Ronan Dupont" %}
   <div class="profile-page__contact-grid">
     <div class="profile-page__contact-methods">
       <a class="profile-page__contact-link" href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">

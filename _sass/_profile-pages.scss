@@ -169,7 +169,43 @@
     &:hover { border-color: #adc7ee; background: #f5f9ff; }
   }
 
-  .profile-page__contact-hero { max-width: 780px; padding-bottom: 2.5rem; .profile-page__lead-title { max-width: 24ch; } }
+  .profile-page__contact-hero {
+    max-width: 880px;
+    padding-bottom: 2.25rem;
+    .profile-page__lead { max-width: 68ch; margin: 1.2rem 0 0; font-size: 1.05rem; line-height: 1.7; }
+  }
+  .profile-page__contact-identity {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.35rem 1.7rem;
+    border: 1px solid var(--profile-line);
+    border-radius: var(--radius, 16px);
+    background: radial-gradient(ellipse at 100% 0, rgba(8, 127, 152, .08), transparent 68%), linear-gradient(115deg, #f5f9ff, #fff);
+  }
+  .profile-page__contact-identity-copy {
+    min-width: 0;
+    .profile-page__eyebrow { margin-bottom: .55rem; }
+  }
+  .profile-page__contact-name {
+    margin: 0 0 .6rem;
+    font-size: clamp(1.65rem, 3vw, 2.15rem);
+    font-weight: 750;
+    line-height: 1.18;
+    letter-spacing: -.035em;
+  }
+  .profile-page__contact-degree { color: var(--profile-cyan); font-weight: 600; white-space: nowrap; }
+  .profile-page__contact-invitation { margin: 0; color: var(--profile-muted); font-size: 1.02rem; line-height: 1.5; }
+  .profile-page__contact-portrait {
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 60%, #e1edf7 0, #edf6fc 58%, transparent 59%);
+    img { display: block; width: 102px; height: 112px; max-width: 100%; object-fit: contain; margin: 0; }
+  }
   .profile-page__contact-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .9fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
   .profile-page__contact-methods { border-top: 2px solid var(--profile-blue); }
   .profile-page__contact-link {
@@ -227,6 +263,10 @@
     .profile-page__explore > div { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
     .profile-page__explore a { min-height: 78px; }
     .profile-page__contact-hero { padding-bottom: 1.5rem; }
+    .profile-page__contact-identity { grid-template-columns: minmax(0, 1fr) 80px; gap: 1rem; padding: 1.15rem; }
+    .profile-page__contact-name { font-size: clamp(1.4rem, 4.8vw, 1.8rem); }
+    .profile-page__contact-invitation { font-size: .93rem; }
+    .profile-page__contact-portrait { width: 80px; height: 92px; img { width: 80px; height: auto; } }
     .profile-page__contact-grid { gap: 1.7rem; }
     .profile-page__contact-link { gap: .75rem; min-height: 100px; padding: 1.2rem 0; }
     .profile-page__contact-icon { width: 42px; height: 42px; flex-basis: 42px; border-radius: 11px; svg { width: 22px; height: 22px; } }
