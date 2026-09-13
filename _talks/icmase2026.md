@@ -25,7 +25,7 @@ The appendix includes the complete GPBiCG algorithm and the phase rules for GPBi
 
 You can find the presentation here:
 
-- [Slides — handout PDF]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }})
-- [Slides — progressive presentation PDF]({{ '/files/presentation/ICMASE2026_ultra_progressive.pdf' | relative_url }})
+- [Slides — handout PDF]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }}?v=18)
+- [Slides — progressive presentation PDF]({{ '/files/presentation/ICMASE2026_ultra_progressive.pdf' | relative_url }}?v=18)
 
-[![Title slide of Ronan Dupont’s ICMASE 2026 presentation on GPBiCG(m, ℓ, k)]({{ '/images/talks/icmase2026-cover.jpg' | relative_url }})]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }})
+[![Title slide of Ronan Dupont’s ICMASE 2026 presentation on GPBiCG(m, ℓ, k)]({{ '/images/talks/icmase2026-cover.jpg' | relative_url }})]({{ '/files/presentation/ICMASE2026_ultra_handout.pdf' | relative_url }}?v=18)
