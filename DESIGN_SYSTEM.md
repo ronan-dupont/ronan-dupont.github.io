@@ -43,3 +43,7 @@ Use the existing Ruby 3.1 environment and `bundle exec jekyll build --safe` for 
 Review homepage, all three collection archives, article pages, all CV/contact languages, teaching resources and the 404 page at phone, tablet and desktop widths. Check navigation with keyboard, PDF/ZIP links, images, MathJax and the shared visitor counter. All source public routes are retained; the explicitly unpublished /cv-legacy/ remains unpublished.
 
 The inherited /terms/ text describes analytics/comment services that are not enabled. Its wording warrants a separate content review; this design change does not introduce those services or alter that text.
+
+## Futuristic atmosphere refinement
+
+The full-width hero filaments are restored with a dark text veil, a cyan rim and a subtle portrait halo. The shared background uses static CSS halos and a grid masked toward the margins; the central reading area stays calm. Phone layouts simplify the background, and print removes all atmospheric pseudo-elements. No additional scripts, fonts or image requests are introduced. The numerical-linear-algebra illustration is now a decorative sparse matrix with column vectors, representing an abstract Ax = b without research data.
