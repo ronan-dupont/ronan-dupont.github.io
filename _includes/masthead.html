@@ -22,29 +22,29 @@
   {% endfor %}
 {% endif %}
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button type="button" aria-label="{% if page_lang == 'ja' %}メニュー{% else %}Menu{% endif %}" aria-controls="navigation-overflow" aria-expanded="false"><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in nav_links %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if page.url contains link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
-          {% endfor %}
-          <li class="masthead__menu-item language-switcher" aria-label="Language selector">
-            <a class="{% if page_lang == 'en' %}active{% endif %}" href="{{ en_url | prepend: base_path }}">EN</a>
-            <a class="{% if page_lang == 'fr' %}active{% endif %}" href="{{ fr_url | prepend: base_path }}">FR</a>
-            <a class="{% if page_lang == 'ja' %}active{% endif %}" href="{{ ja_url | prepend: base_path }}">日本語</a>
-          </li>
-        </ul>
-        <ul id="navigation-overflow" class="hidden-links hidden"></ul>
-      </nav>
+{% assign home_url = '/' %}{% assign contact_url = '/contact/' %}
+{% if page_lang == 'fr' %}{% assign home_url = '/fr/' %}{% assign contact_url = '/fr/contact/' %}{% elsif page_lang == 'ja' %}{% assign home_url = '/ja/' %}{% assign contact_url = '/ja/contact/' %}{% endif %}
+<header class="masthead studio-header">
+  <nav class="studio-nav" aria-label="{% if page_lang == 'fr' %}Navigation principale{% elsif page_lang == 'ja' %}メインナビゲーション{% else %}Main navigation{% endif %}">
+    <a class="studio-brand" href="{{ home_url | relative_url }}"><span class="studio-brand__mark" aria-hidden="true">R<span>.</span></span><span>Ronan Dupont</span></a>
+    <div class="studio-nav__panel" id="navigation-panel">
+      <ul class="studio-nav__links">
+        {% for link in nav_links %}
+        {% assign active_link = false %}
+        {% if page.url contains link.url %}{% assign active_link = true %}{% endif %}
+        {% if page.collection == 'talks' and link.url contains '/talks/' %}{% assign active_link = true %}{% endif %}
+        {% if page.collection == 'publications' and link.url contains '/publications/' %}{% assign active_link = true %}{% endif %}
+        {% if page.collection == 'teaching' and link.url contains '/teaching/' %}{% assign active_link = true %}{% endif %}
+        <li><a href="{{ link.url | relative_url }}"{% if active_link %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
+        <li><a href="{{ contact_url | relative_url }}"{% if page.translation_key == 'contact' %} aria-current="page"{% endif %}>{% if page_lang == 'ja' %}連絡先{% else %}Contact{% endif %}</a></li>
+      </ul>
     </div>
-  </div>
-</div>
+    <div class="studio-locales" aria-label="{% if page_lang == 'fr' %}Langue{% elsif page_lang == 'ja' %}言語{% else %}Language{% endif %}">
+      <a href="{{ en_url | relative_url }}" lang="en" hreflang="en" aria-label="English"{% if page_lang == 'en' %} aria-current="true"{% endif %}>EN</a>
+      <a href="{{ fr_url | relative_url }}" lang="fr" hreflang="fr" aria-label="Français"{% if page_lang == 'fr' %} aria-current="true"{% endif %}>FR</a>
+      <a href="{{ ja_url | relative_url }}" lang="ja" hreflang="ja" aria-label="日本語"{% if page_lang == 'ja' %} aria-current="true"{% endif %}>日本語</a>
+    </div>
+    <button class="studio-menu-toggle" type="button" aria-controls="navigation-panel" aria-expanded="false" aria-label="{% if page_lang == 'ja' %}メニュー{% else %}Menu{% endif %}"><span></span><span></span></button>
+  </nav>
+</header>

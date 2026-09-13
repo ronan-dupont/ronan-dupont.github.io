@@ -1,16 +1,15 @@
+{% assign home_contact = '/contact/' %}{% if page.lang == 'fr' %}{% assign home_contact = '/fr/contact/' %}{% elsif page.lang == 'ja' %}{% assign home_contact = '/ja/contact/' %}{% endif %}
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
+    <p class="home-hero__eyebrow"><span aria-hidden="true"></span>{{ page.hero_affiliation }}</p>
+    <h1 id="home-title">Ronan<br>Dupont<span aria-hidden="true">.</span></h1>
     <p class="home-hero__kicker">{{ page.hero_kicker }}</p>
-    <h1 id="home-title">Ronan Dupont<span aria-hidden="true">.</span></h1>
-    <p class="home-hero__intro">{{ page.hero_intro }}</p>
-    <div class="home-hero__actions">
-      {% assign action_file = "home-actions-" | append: page.lang | append: ".html" %}
-      {% include {{ action_file }} %}
-    </div>
+    <div class="home-hero__actions">{% assign action_file = 'home-actions-' | append: page.lang | append: '.html' %}{% include {{ action_file }} %}</div>
   </div>
-  <div class="home-hero__portrait">
-    <img src="{{ '/images/profile.png' | relative_url }}" alt="Ronan Dupont" width="320" height="320" fetchpriority="high" decoding="async">
-    <p>{{ page.hero_affiliation }}</p>
-    <a href="{{ '/contact/' | relative_url }}">{% if page.lang == 'ja' %}お問い合わせ{% else %}Contact{% endif %} <span aria-hidden="true">↗</span></a>
+  <div class="home-hero__visual">
+    <div class="home-hero__orbit" aria-hidden="true"></div>
+    <div class="home-hero__portrait"><img src="{{ '/images/profile.png' | relative_url }}" alt="Ronan Dupont" width="320" height="320" fetchpriority="high" decoding="async"></div>
+    <a class="home-hero__contact" href="{{ home_contact | relative_url }}">{% if page.lang == 'ja' %}お問い合わせ{% else %}Contact{% endif %}<span aria-hidden="true">↗</span></a>
   </div>
 </section>
+<div class="home-introduction"><span class="home-introduction__label">{% if page.lang == 'fr' %}Recherche &amp; méthodes{% elsif page.lang == 'ja' %}研究と手法{% else %}Research &amp; methods{% endif %}</span><p>{{ page.hero_intro }}</p></div>

@@ -1,0 +1,58 @@
+{% include base_path %}
+{% include editorial-labels.html %}
+{% assign editorial_title_key = "title_" | append: editorial_lang %}
+{% assign editorial_type_key = "type_" | append: editorial_lang %}
+{% assign editorial_venue_key = "venue_" | append: editorial_lang %}
+{% assign editorial_location_key = "location_" | append: editorial_lang %}
+{% assign document_title = page[editorial_title_key] | default: page.title %}
+{% assign document_type = page[editorial_type_key] | default: page.type %}
+{% assign document_venue = page[editorial_venue_key] | default: page.venue %}
+{% assign document_location = page[editorial_location_key] | default: page.location %}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}{% include page__hero.html %}{% endif %}
+{% if page.url != "/" and site.breadcrumbs %}{% unless paginator %}{% include breadcrumbs.html %}{% endunless %}{% endif %}
+
+<main id="main" class="site-shell">
+  {% include sidebar.html %}
+  <article class="page editorial-document" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ document_title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
+    <div class="page__inner-wrap editorial-document__inner">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+      <header class="editorial-header">
+        {% if page.collection == 'publications' %}<a class="editorial-back" href="{{ editorial_prefix | append: '/publications/' | relative_url }}"><span aria-hidden="true">←</span> {{ editorial_publications }}</a>{% elsif page.collection == 'talks' %}<a class="editorial-back" href="{{ editorial_prefix | append: '/talks/' | relative_url }}"><span aria-hidden="true">←</span> {{ editorial_talks }}</a>{% elsif page.collection == 'teaching' %}<a class="editorial-back" href="{{ editorial_prefix | append: '/teaching/' | relative_url }}"><span aria-hidden="true">←</span> {{ editorial_teaching }}</a>{% endif %}
+        {% if document_title %}<h1 class="page__title editorial-title">{{ document_title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+        {% if page.date or document_type or document_venue or document_location or page.modified %}
+        <div class="editorial-meta">
+          {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{% if page.collection == 'talks' %}{{ page.date | date: "%d.%m.%Y" }}{% elsif document_venue %}{{ page.date | date: "%Y" }}{% else %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}</time>{% endif %}
+          {% if document_type %}<span>{{ document_type }}</span>{% endif %}
+          {% if document_venue %}<span>{{ document_venue }}</span>{% endif %}
+          {% if document_location %}<span>{{ document_location }}</span>{% endif %}
+          {% if page.modified %}<span>{{ editorial_updated }} <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%d.%m.%Y" }}</time></span>{% endif %}
+        </div>
+        {% endif %}
+        {% if page.read_time %}<p class="page__meta editorial-read-time">{% include read-time.html %}</p>{% endif %}
+        {% include editorial-downloads.html item=page title=document_title %}
+      </header>
+      {% endunless %}
+      <section class="page__content editorial-content" itemprop="text">
+        {{ content }}
+        {% if page.link %}<p><a href="{{ page.link }}" class="editorial-resource">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }} <span aria-hidden="true">↗</span></a></p>{% endif %}
+      </section>
+      {% if page.citation %}<aside class="editorial-citation" aria-label="{{ editorial_reference }}"><p class="editorial-citation__label">{{ editorial_reference }}</p><p>{{ page.citation }}{% if page.paperurl and page.paperurl != empty %} <a href="{{ page.paperurl | relative_url }}">{{ editorial_pdf }}</a>{% endif %}</p></aside>{% endif %}
+      <footer class="page__meta editorial-taxonomy">
+        {% if site.data.ui-text[site.locale].meta_label %}<h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>{% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+      {% include editorial-pagination.html %}
+    </div>
+    {% if site.comments.provider and page.comments %}{% include comments.html %}{% endif %}
+  </article>
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+  <div class="page__related editorial-related">
+    {% if site.data.ui-text[site.locale].related_label %}<h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>{% endif %}
+    <div class="grid__wrapper">{% for post in site.related_posts limit:4 %}{% include archive-single.html type="grid" %}{% endfor %}</div>
+  </div>
+  {% endif %}
+</main>

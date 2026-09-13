@@ -1,9 +1,8 @@
-{% assign footer_lang = page.lang | default: "en" %}
-<div class="footer-grid">
-  <div class="site-contact">
-    <img src="{{ '/images/avatar_2.png' | relative_url }}" alt="" class="site-contact__avatar" width="82" loading="lazy" decoding="async">
-    <div class="site-contact__body">
-      <p class="site-contact__label">{% if footer_lang == "ja" %}連絡先{% else %}Contact{% endif %}</p>
+{% assign footer_lang = page.lang | default: 'en' %}
+<div class="studio-footer">
+  <div class="studio-footer__top">
+    <div class="studio-footer__identity"><p class="studio-footer__name">Ronan Dupont<span aria-hidden="true">.</span></p><p>{% if footer_lang == 'fr' %}Mathématiques appliquées<br>Université de Nagoya, Japon{% elsif footer_lang == 'ja' %}応用数学<br>名古屋大学 · 日本{% else %}Applied mathematics<br>Nagoya University, Japan{% endif %}</p></div>
+    <div class="site-contact"><p class="site-contact__label">{% if footer_lang == 'ja' %}連絡先{% else %}Contact{% endif %}</p>
       <a class="contact-link" href="mailto:r-dupont@na.nuap.nagoya-u.ac.jp">
         <span class="contact-link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
         <span>r-dupont@na.nuap.nagoya-u.ac.jp</span>
@@ -14,5 +13,11 @@
       </a>
     </div>
   </div>
-  {% include visitor-counter.html %}
+  <div class="studio-footer__bottom">
+    <p>© {{ site.time | date: '%Y' }} Ronan Dupont</p>
+    <nav class="studio-footer__profiles" aria-label="{% if footer_lang == 'fr' %}Profils professionnels{% elsif footer_lang == 'ja' %}研究者プロフィール{% else %}Professional profiles{% endif %}">
+      <a href="{{ site.author.orcid }}">ORCID</a><a href="{{ site.author.researchgate }}">ResearchGate</a><a href="https://github.com/{{ site.author.github }}">GitHub</a><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+    </nav>
+    {% include visitor-counter.html %}
+  </div>
 </div>

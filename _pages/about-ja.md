@@ -17,17 +17,20 @@ hero_affiliation: "名古屋大学 · 日本"
 <h2 id="research-areas-title" class="home-section-title">研究分野</h2>
 <div class="research-grid">
   <article class="research-card">
-    <span>01</span>
+    <span class="research-card__index" aria-hidden="true">01</span>
+    {% include research-symbol.html index=1 %}
     <h3>数値線形代数</h3>
     <p>疎な科学技術計算システムに対する反復ソルバー、Krylov部分空間法、前処理。</p>
   </article>
   <article class="research-card">
-    <span>02</span>
+    <span class="research-card__index" aria-hidden="true">02</span>
+    {% include research-symbol.html index=2 %}
     <h3>Virtual Element Method</h3>
     <p>Helmholtz方程式およびmild-slope方程式に対する柔軟な高次数値手法。</p>
   </article>
   <article class="research-card">
-    <span>03</span>
+    <span class="research-card__index" aria-hidden="true">03</span>
+    {% include research-symbol.html index=3 %}
     <h3>沿岸地形力学</h3>
     <p>波浪により駆動される沿岸変化と堆積構造を記述する大域的最適化原理。</p>
   </article>

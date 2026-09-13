@@ -20,17 +20,20 @@ hero_affiliation: "Nagoya University · Japan"
 <h2 id="research-areas-title" class="home-section-title">Research areas</h2>
 <div class="research-grid">
   <article class="research-card">
-    <span>01</span>
+    <span class="research-card__index" aria-hidden="true">01</span>
+    {% include research-symbol.html index=1 %}
     <h3>Numerical linear algebra</h3>
     <p>Iterative solvers, Krylov subspace methods and preconditioning for sparse scientific systems.</p>
   </article>
   <article class="research-card">
-    <span>02</span>
+    <span class="research-card__index" aria-hidden="true">02</span>
+    {% include research-symbol.html index=2 %}
     <h3>Virtual elements</h3>
     <p>Flexible high-order methods for Helmholtz and mild-slope wave propagation problems.</p>
   </article>
   <article class="research-card">
-    <span>03</span>
+    <span class="research-card__index" aria-hidden="true">03</span>
+    {% include research-symbol.html index=3 %}
     <h3>Coastal morphodynamics</h3>
     <p>Global optimization principles for wave-driven coastline evolution and sedimentary patterns.</p>
   </article>

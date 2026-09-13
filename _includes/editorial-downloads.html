@@ -1,0 +1,15 @@
+{% assign download_item = include.item %}
+{% assign download_title = include.title | default: download_item.title | strip_html %}
+{% assign has_paper = false %}
+{% if download_item.paperurl and download_item.paperurl != empty %}{% assign has_paper = true %}{% endif %}
+{% if has_paper or download_item.slides_handout or download_item.slides_progressive or download_item.poster %}
+  <div class="editorial-downloads{% if include.compact %} editorial-downloads--compact{% endif %}">
+    {% unless include.compact %}<p class="editorial-downloads__label">{{ editorial_downloads }}</p>{% endunless %}
+    <div class="editorial-downloads__links">
+      {% if has_paper %}<a class="editorial-resource" href="{{ download_item.paperurl | relative_url | escape }}" aria-label="{{ editorial_pdf }} — {{ download_title | escape }}">{{ editorial_pdf }} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if download_item.slides_handout %}<a class="editorial-resource" href="{{ download_item.slides_handout | relative_url | escape }}" aria-label="{{ editorial_handout }} — {{ download_title | escape }}">{{ editorial_handout }} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if download_item.slides_progressive %}<a class="editorial-resource" href="{{ download_item.slides_progressive | relative_url | escape }}" aria-label="{{ editorial_progressive }} — {{ download_title | escape }}">{{ editorial_progressive }} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if download_item.poster %}<a class="editorial-resource" href="{{ download_item.poster | relative_url | escape }}" aria-label="{{ editorial_poster }} — {{ download_title | escape }}">{{ editorial_poster }} <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </div>
+{% endif %}

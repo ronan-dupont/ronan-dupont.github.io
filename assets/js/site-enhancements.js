@@ -1,79 +1,45 @@
-/* Small progressive enhancements for the academic website. */
+/* Accessible, progressively enhanced navigation. No background polling. */
 (function () {
-  "use strict";
-
-  function setupAuthorLinks() {
-    var wrapper = document.querySelector(".author__urls-wrapper");
-    if (!wrapper) {
-      return;
+  'use strict';
+  function disclosure(options) {
+    var button = document.querySelector(options.button);
+    var panel = document.querySelector(options.panel);
+    if (!button || !panel) { return; }
+    var compact = window.matchMedia(options.breakpoint);
+    var open = false;
+    function render() {
+      var expanded = compact.matches && open;
+      panel.hidden = compact.matches && !open;
+      panel.classList.toggle('is-open', expanded);
+      button.setAttribute('aria-expanded', String(expanded));
     }
-
-    var button = wrapper.querySelector("button");
-    var links = wrapper.querySelector(".author__urls");
-    if (!button || !links) {
-      return;
+    function close(restoreFocus) {
+      open = false; render();
+      if (restoreFocus) { button.focus(); }
     }
-
-    button.setAttribute("type", "button");
-    button.setAttribute("aria-controls", "author-links");
-    button.setAttribute("aria-expanded", "false");
-    links.setAttribute("id", "author-links");
-
-    button.addEventListener("click", function () {
-      window.setTimeout(function () {
-        var isOpen = button.classList.contains("open");
-        wrapper.classList.toggle("is-open", isOpen);
-        button.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      }, 0);
+    button.addEventListener('click', function () { open = !open; render(); });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && open) { close(true); }
     });
-
-    wrapper.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && wrapper.classList.contains("is-open")) {
-        button.click(); button.focus();
-      }
+    document.addEventListener('click', function (event) {
+      if (open && !panel.contains(event.target) && !button.contains(event.target)) { close(false); }
     });
-
-    document.addEventListener("click", function (event) {
-      if (!wrapper.contains(event.target) && wrapper.classList.contains("is-open")) {
-        wrapper.classList.remove("is-open");
-        button.classList.remove("open");
-        button.setAttribute("aria-expanded", "false");
-        links.style.display = "none";
-      }
+    panel.addEventListener('click', function (event) {
+      if (event.target.closest('a') && compact.matches) { close(false); }
     });
+    var onResize = function () {
+      var restoreFocus = compact.matches && panel.contains(document.activeElement);
+      open = false; render();
+      if (restoreFocus) { button.focus(); }
+    };
+    if (compact.addEventListener) { compact.addEventListener('change', onResize); }
+    else { compact.addListener(onResize); }
+    render();
   }
-
-  function setupNavigation() {
-    var nav = document.getElementById("site-nav");
-    if (!nav) { return; }
-    var toggle = nav.querySelector("button");
-    var overflow = document.getElementById("navigation-overflow");
-    if (!toggle || !overflow) { return; }
-    function syncState() {
-      toggle.setAttribute("aria-expanded", String(!overflow.classList.contains("hidden")));
-    }
-    new MutationObserver(syncState).observe(overflow, { attributes: true, attributeFilter: ["class"] });
-    nav.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && !overflow.classList.contains("hidden")) {
-        toggle.click(); toggle.focus();
-      }
-    });
-    syncState();
+  function setup() {
+    disclosure({ button: '.studio-menu-toggle', panel: '#navigation-panel', breakpoint: '(max-width: 959px)' });
+    disclosure({ button: '.profile-toggle', panel: '#author-links', breakpoint: '(max-width: 959px)' });
   }
-
-  function setupFooterSize() {
-    var footer = document.querySelector(".page__footer");
-    if (footer && "ResizeObserver" in window) {
-      new ResizeObserver(function () {
-        document.body.style.marginBottom = footer.getBoundingClientRect().height + "px";
-      }).observe(footer);
-    }
-  }
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    setupAuthorLinks();
-    setupNavigation();
-    setupFooterSize();
-  });
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setup); }
+  else { setup(); }
 }());

@@ -1,69 +1,28 @@
-{% include base_path %}
-
-{% assign page_lang = page.lang | default: "en" %}
-{% assign title_key = "title_" | append: page_lang %}
-{% assign type_key = "type_" | append: page_lang %}
-{% assign venue_key = "venue_" | append: page_lang %}
-{% assign location_key = "location_" | append: page_lang %}
-{% assign excerpt_key = "excerpt_" | append: page_lang %}
+{% include editorial-labels.html %}
+{% assign title_key = "title_" | append: editorial_lang %}
+{% assign type_key = "type_" | append: editorial_lang %}
+{% assign venue_key = "venue_" | append: editorial_lang %}
+{% assign location_key = "location_" | append: editorial_lang %}
+{% assign excerpt_key = "excerpt_" | append: editorial_lang %}
 {% assign localized_title = post[title_key] | default: post.title %}
 {% assign localized_type = post[type_key] | default: post.type %}
 {% assign localized_venue = post[venue_key] | default: post.venue %}
 {% assign localized_location = post[location_key] | default: post.location %}
 {% assign localized_excerpt = post[excerpt_key] | default: post.excerpt %}
-{% if page_lang == "fr" %}
-  {% assign date_label = "Année" %}
-  {% assign pdf_label = "Lire le PDF" %}
-  {% assign handout_label = "PDF complet" %}
-  {% assign progressive_label = "PDF progressif" %}
-  {% assign poster_label = "Poster Moonshot · A0" %}
-{% elsif page_lang == "ja" %}
-  {% assign date_label = "年" %}
-  {% assign pdf_label = "PDFを読む" %}
-  {% assign handout_label = "配布用PDF" %}
-  {% assign progressive_label = "段階表示PDF" %}
-  {% assign poster_label = "Moonshotポスター · A0" %}
-{% else %}
-  {% assign date_label = "Year" %}
-  {% assign pdf_label = "Read PDF" %}
-  {% assign handout_label = "Handout PDF" %}
-  {% assign progressive_label = "Progressive PDF" %}
-  {% assign poster_label = "Moonshot poster · A0" %}
-{% endif %}
-
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item archive__item--localized" itemscope itemtype="http://schema.org/CreativeWork">
-    <h2 class="archive__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ localized_title }}</a>
-    </h2>
-
-    <p class="page__meta">
-      {% if post.date %}<span>{{ date_label }} {{ post.date | date: "%Y" }}</span>{% endif %}
-      {% if localized_type %}<span>{{ localized_type }}</span>{% endif %}
-      {% if localized_venue %}<span>{{ localized_venue }}</span>{% endif %}
-      {% if localized_location %}<span>{{ localized_location }}</span>{% endif %}
-    </p>
-
-    {% if localized_excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ localized_excerpt | markdownify | strip_html }}</p>
-    {% endif %}
-    {% assign has_paper = false %}
-    {% if post.paperurl and post.paperurl != empty %}{% assign has_paper = true %}{% endif %}
-    {% if has_paper or post.slides_handout or post.slides_progressive or post.poster %}
-      <div class="archive__actions">
-        {% if has_paper %}
-          <a class="archive__download" href="{{ post.paperurl | relative_url | escape }}" aria-label="{{ pdf_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ pdf_label }}</a>
-        {% endif %}
-        {% if post.slides_handout %}
-          <a class="archive__download" href="{{ post.slides_handout | relative_url | escape }}" aria-label="{{ handout_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ handout_label }}</a>
-        {% endif %}
-        {% if post.slides_progressive %}
-          <a class="archive__download" href="{{ post.slides_progressive | relative_url | escape }}" aria-label="{{ progressive_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ progressive_label }}</a>
-        {% endif %}
-        {% if post.poster %}
-          <a class="archive__download" href="{{ post.poster | relative_url | escape }}" aria-label="{{ poster_label }} — {{ localized_title | escape }}"><span aria-hidden="true">↗</span> {{ poster_label }}</a>
-        {% endif %}
-      </div>
-    {% endif %}
+<div class="{{ include.type | default: 'list' }}__item editorial-entry">
+  <article class="archive__item archive__item--localized editorial-entry__article" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="editorial-entry__year">{% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}"><span class="screen-reader-text">{{ editorial_year }} </span>{{ post.date | date: '%Y' }}</time>{% endif %}</div>
+    <div class="editorial-entry__body">
+      {% if localized_type or localized_venue or localized_location %}
+      <p class="editorial-entry__meta">
+        {% if localized_type %}<span>{{ localized_type }}</span>{% endif %}
+        {% if localized_venue %}<span>{{ localized_venue }}</span>{% endif %}
+        {% if localized_location %}<span>{{ localized_location }}</span>{% endif %}
+      </p>
+      {% endif %}
+      <h2 class="archive__item-title" itemprop="headline"><a href="{{ post.url | relative_url }}" rel="permalink">{{ localized_title }}</a></h2>
+      {% if localized_excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ localized_excerpt | markdownify | strip_html }}</p>{% endif %}
+      {% include editorial-downloads.html item=post title=localized_title compact=true %}
+    </div>
   </article>
 </div>

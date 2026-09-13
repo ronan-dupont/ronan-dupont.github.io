@@ -1,0 +1,76 @@
+{% assign profile = page.cv_profile %}
+<div class="profile-page profile-page--cv">
+  <section class="profile-page__intro" aria-labelledby="cv-profile-heading">
+    <div class="profile-page__intro-copy">
+      <p class="profile-page__eyebrow">{{ profile.kicker }}</p>
+      <h2 id="cv-profile-heading" class="profile-page__lead-title">{{ profile.headline }}</h2>
+      <p class="profile-page__lead">{{ profile.intro }}</p>
+      <nav class="profile-page__languages" aria-label="{{ profile.languages_label | escape }}">
+        <a href="{{ '/cv/' | relative_url }}" lang="en" hreflang="en"{% if page.lang == 'en' %} aria-current="page"{% endif %}>English</a>
+        <a href="{{ '/cv-fr/' | relative_url }}" lang="fr" hreflang="fr"{% if page.lang == 'fr' %} aria-current="page"{% endif %}>Français</a>
+        <a href="{{ '/cv-ja/' | relative_url }}" lang="ja" hreflang="ja"{% if page.lang == 'ja' %} aria-current="page"{% endif %}>日本語</a>
+      </nav>
+    </div>
+    <aside class="profile-page__document" aria-labelledby="cv-document-heading">
+      <div class="profile-page__document-top">
+        <span class="profile-page__document-icon" aria-hidden="true"><svg viewBox="0 0 32 38" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2h12l8 8v24a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M19 2v9h8M11 19h10M11 24h10M11 29h6"/></svg></span>
+        <p>{{ profile.pdf_label }}<span>{{ profile.pdf_note }}</span></p>
+      </div>
+      <h3 id="cv-document-heading">{{ profile.document_title }}</h3>
+      <p>{{ profile.document_description }}</p>
+      <a class="profile-page__button" href="{{ profile.pdf | relative_url }}" download>{{ profile.download }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg></a>
+      <a class="profile-page__quiet-link" href="{{ profile.pdf | relative_url }}">{{ profile.pdf_open }} <span aria-hidden="true">↗</span></a>
+    </aside>
+  </section>
+
+  <div class="profile-page__columns">
+    <section class="profile-page__career" aria-labelledby="cv-career-heading">
+      <div class="profile-page__section-heading">
+        <h2 id="cv-career-heading">{{ profile.career_title }}</h2>
+        <p>{{ profile.career_intro }}</p>
+      </div>
+      <ol class="profile-page__timeline">
+        {% for entry in profile.timeline %}
+        <li>
+          <p class="profile-page__date">{{ entry[0] }}</p>
+          <div>
+            <h3>{{ entry[1] }}</h3>
+            <p class="profile-page__institution">{{ entry[2] }}</p>
+            <p>{{ entry[3] }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    <div class="profile-page__supporting">
+      <section aria-labelledby="cv-research-heading">
+        <h2 id="cv-research-heading">{{ profile.research_title }}</h2>
+        <dl class="profile-page__expertise">
+          {% for item in profile.research %}
+          <dt>{{ item[0] }}</dt>
+          <dd>{{ item[1] }}</dd>
+          {% endfor %}
+        </dl>
+      </section>
+      <section class="profile-page__teaching" aria-labelledby="cv-teaching-heading">
+        <h2 id="cv-teaching-heading">{{ profile.teaching_title }}</h2>
+        <p>{{ profile.teaching_intro }}</p>
+        <ul>
+          {% for item in profile.teaching %}
+          <li><span>{{ item[0] }}</span>{{ item[1] }}</li>
+          {% endfor %}
+        </ul>
+        <a class="profile-page__text-link" href="{{ profile.teaching_url | relative_url }}">{{ profile.teaching_link }} <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+  </div>
+
+  <section class="profile-page__explore" aria-labelledby="cv-explore-heading">
+    <h2 id="cv-explore-heading">{{ profile.more_title }}</h2>
+    <div>
+      {% for item in profile.more %}
+      <a href="{{ item[2] | relative_url }}"><span><strong>{{ item[0] }}</strong><span>{{ item[1] }}</span></span><span aria-hidden="true">↗</span></a>
+      {% endfor %}
+    </div>
+  </section>
+</div>

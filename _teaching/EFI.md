@@ -21,7 +21,7 @@ excerpt_ja: "プノンペン・フランス国際学校の生徒向けの演習�
 Mathematics and programming exercises prepared for students at the École Française Internationale de Phnom Penh.
 
 3 EMES: Mathematical puzzle competition
-======
+------
 
 
 [[Exercise sheet]](http://ronan-dupont.github.io/files/teaching/enigmes_3E_EFI_2025.pdf)
@@ -30,6 +30,6 @@ Mathematics and programming exercises prepared for students at the École Franç
 
 
 1 ER: Python programming
-======
+------
 
 [[Exercise sheet]](http://ronan-dupont.github.io/files/teaching/EFI_Python_TP1.pdf)

@@ -1,0 +1,53 @@
+{% assign editorial_lang = page.lang | default: "en" %}
+{% if editorial_lang == "fr" %}
+  {% assign editorial_pdf = "Lire le PDF" %}
+  {% assign editorial_handout = "Diapositives · PDF complet" %}
+  {% assign editorial_progressive = "Présentation · PDF progressif" %}
+  {% assign editorial_poster = "Poster Moonshot · A0" %}
+  {% assign editorial_downloads = "Documents" %}
+  {% assign editorial_reference = "Référence bibliographique" %}
+  {% assign editorial_previous = "Précédent" %}
+  {% assign editorial_next = "Suivant" %}
+  {% assign editorial_navigation = "Parcourir les articles" %}
+  {% assign editorial_updated = "Mis à jour" %}
+  {% assign editorial_year = "Année" %}
+  {% assign editorial_items = "entrées" %}
+  {% assign editorial_publications = "Publications" %}
+  {% assign editorial_talks = "Conférences et présentations" %}
+  {% assign editorial_teaching = "Enseignement" %}
+  {% assign editorial_prefix = "/fr" %}
+{% elsif editorial_lang == "ja" %}
+  {% assign editorial_pdf = "PDFを読む" %}
+  {% assign editorial_handout = "スライド · 配布用PDF" %}
+  {% assign editorial_progressive = "発表 · 段階表示PDF" %}
+  {% assign editorial_poster = "Moonshotポスター · A0" %}
+  {% assign editorial_downloads = "資料" %}
+  {% assign editorial_reference = "引用情報" %}
+  {% assign editorial_previous = "前の記事" %}
+  {% assign editorial_next = "次の記事" %}
+  {% assign editorial_navigation = "記事のナビゲーション" %}
+  {% assign editorial_updated = "更新日" %}
+  {% assign editorial_year = "年" %}
+  {% assign editorial_items = "件" %}
+  {% assign editorial_publications = "研究業績" %}
+  {% assign editorial_talks = "講演・発表" %}
+  {% assign editorial_teaching = "教育" %}
+  {% assign editorial_prefix = "/ja" %}
+{% else %}
+  {% assign editorial_pdf = "Read PDF" %}
+  {% assign editorial_handout = "Slides · Handout PDF" %}
+  {% assign editorial_progressive = "Presentation · Progressive PDF" %}
+  {% assign editorial_poster = "Moonshot poster · A0" %}
+  {% assign editorial_downloads = "Downloads" %}
+  {% assign editorial_reference = "Recommended citation" %}
+  {% assign editorial_previous = "Previous" %}
+  {% assign editorial_next = "Next" %}
+  {% assign editorial_navigation = "Browse articles" %}
+  {% assign editorial_updated = "Updated" %}
+  {% assign editorial_year = "Year" %}
+  {% assign editorial_items = "entries" %}
+  {% assign editorial_publications = "Publications" %}
+  {% assign editorial_talks = "Talks and presentations" %}
+  {% assign editorial_teaching = "Teaching" %}
+  {% assign editorial_prefix = "" %}
+{% endif %}

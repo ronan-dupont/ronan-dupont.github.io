@@ -26,13 +26,13 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <p class="author__name">{{ author.name }}</p>
     {% if author_bio %}<p class="author__bio">{{ author_bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ ui_text.follow_label | default: "Follow" }}</button>
-    <ul class="author__urls social-icons">
+    <button type="button" class="profile-toggle" aria-expanded="false" aria-controls="author-links">{% if page_lang == "fr" %}Profils{% elsif page_lang == "ja" %}リンク{% else %}Profiles{% endif %} <span aria-hidden="true">+</span></button>
+    <ul id="author-links" class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author_location }}</li>
       {% endif %}

@@ -1,0 +1,17 @@
+{% if page.previous or page.next %}
+  <nav class="editorial-pagination" aria-label="{{ editorial_navigation }}">
+    {% assign pagination_title_key = "title_" | append: editorial_lang %}
+    {% if page.previous %}
+      <a class="editorial-pagination__previous" href="{{ page.previous.url | relative_url }}" rel="prev">
+        <span class="editorial-pagination__direction"><span aria-hidden="true">←</span> {{ editorial_previous }}</span>
+        <span>{{ page.previous[pagination_title_key] | default: page.previous.title | markdownify | strip_html }}</span>
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a class="editorial-pagination__next" href="{{ page.next.url | relative_url }}" rel="next">
+        <span class="editorial-pagination__direction">{{ editorial_next }} <span aria-hidden="true">→</span></span>
+        <span>{{ page.next[pagination_title_key] | default: page.next.title | markdownify | strip_html }}</span>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}

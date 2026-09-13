@@ -1,0 +1,9 @@
+<svg class="research-symbol" viewBox="0 0 300 100" fill="none" aria-hidden="true" focusable="false">
+{% if include.index == 1 %}
+<g stroke="currentColor" stroke-width="1.2"><path d="M30 78 81 23 140 71 193 24 271 68M30 78 140 71 271 68M81 23 193 24M81 23 140 71M193 24 140 71"/><path d="m81 23 190 45M30 78 193 24" opacity=".2"/></g><g fill="currentColor"><circle cx="30" cy="78" r="4"/><circle cx="81" cy="23" r="5"/><circle cx="140" cy="71" r="6"/><circle cx="193" cy="24" r="4"/><circle cx="271" cy="68" r="5"/></g>
+{% elsif include.index == 2 %}
+<g stroke="currentColor" stroke-width="1.1"><path d="m28 67 30-44 49-6 50 25 39-18 66 29-13 32-74 2-43-17-56 18Zm30-44 18 65m31-71 25 53m25-28 18 45m21-63 53 61M28 67l79-50 68 70 87-34M58 23l99 19 39-18M76 88l81-46 92 43"/><path d="m107 17 25 53 43 17-18-45Z" fill="currentColor" opacity=".08"/></g>
+{% else %}
+<g stroke="currentColor" stroke-width="1.2">{% for i in (1..6) %}<path d="M20 {{ i | times: 12 | plus: 9 }} C65 {{ i | times: 10 | minus: 20 }} 102 {{ i | times: 11 | plus: 65 }} 157 {{ i | times: 12 | plus: 9 }} S 234 {{ i | times: 10 | minus: 10 }} 280 {{ i | times: 12 | plus: 9 }}"/>{% endfor %}</g>
+{% endif %}
+</svg>

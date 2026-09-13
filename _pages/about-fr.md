@@ -17,17 +17,20 @@ hero_affiliation: "Université de Nagoya · Japon"
 <h2 id="research-areas-title" class="home-section-title">Axes de recherche</h2>
 <div class="research-grid">
   <article class="research-card">
-    <span>01</span>
+    <span class="research-card__index" aria-hidden="true">01</span>
+    {% include research-symbol.html index=1 %}
     <h3>Algèbre linéaire numérique</h3>
     <p>Solveurs itératifs, méthodes de sous-espace de Krylov et préconditionnement pour les systèmes scientifiques creux.</p>
   </article>
   <article class="research-card">
-    <span>02</span>
+    <span class="research-card__index" aria-hidden="true">02</span>
+    {% include research-symbol.html index=2 %}
     <h3>Éléments virtuels</h3>
     <p>Méthodes flexibles d'ordre élevé pour les problèmes de propagation des vagues de type Helmholtz et mild-slope.</p>
   </article>
   <article class="research-card">
-    <span>03</span>
+    <span class="research-card__index" aria-hidden="true">03</span>
+    {% include research-symbol.html index=3 %}
     <h3>Morphodynamique côtière</h3>
     <p>Principes d'optimisation globale pour l'évolution des littoraux forcée par les vagues et les structures sédimentaires.</p>
   </article>

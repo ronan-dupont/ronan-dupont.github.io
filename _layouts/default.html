@@ -12,7 +12,7 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="layout-{{ page.layout | default: layout.layout }}">
     <a class="skip-link" href="#main">{% if page_lang == "fr" %}Aller au contenu{% elsif page_lang == "ja" %}本文へ移動{% else %}Skip to content{% endif %}</a>
 
     {% include browser-upgrade.html %}

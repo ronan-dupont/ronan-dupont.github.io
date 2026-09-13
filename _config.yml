@@ -148,6 +148,9 @@ exclude:
   - log
   - node_modules
   - package.json
+  - scripts
+  - DESIGN_SYSTEM.md
+  - assets/fonts/manrope/README.md
   - tmp
   - vendor
 keep_files:

@@ -1,24 +1,23 @@
 ---
 layout: default
 ---
+{% include editorial-labels.html %}
+{% assign archive_count_label = editorial_items %}
+{% if page.translation_key == 'publications' %}{% assign archive_count_label = 'publications' %}{% if page.lang == 'ja' %}{% assign archive_count_label = '件の研究業績' %}{% endif %}
+{% elsif page.translation_key == 'talks' %}{% assign archive_count_label = 'presentations' %}{% if page.lang == 'fr' %}{% assign archive_count_label = 'présentations' %}{% elsif page.lang == 'ja' %}{% assign archive_count_label = '件の発表' %}{% endif %}
+{% elsif page.translation_key == 'teaching' %}{% assign archive_count_label = 'courses' %}{% if page.lang == 'fr' %}{% assign archive_count_label = 'cours' %}{% elsif page.lang == 'ja' %}{% assign archive_count_label = '件の授業' %}{% endif %}{% endif %}
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}{% include page__hero.html %}{% endif %}
+{% if page.url != "/" and site.breadcrumbs %}{% unless paginator %}{% include breadcrumbs.html %}{% endunless %}{% endif %}
+<main id="main" class="site-shell">
   {% include sidebar.html %}
-
-  <div class="archive">
+  <div class="archive editorial-archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
+    <header class="editorial-archive__header">
+      {% if page.translation_key == 'publications' %}<p class="editorial-archive__count">{{ site.publications | size }} {{ archive_count_label }}</p>{% elsif page.translation_key == 'talks' %}<p class="editorial-archive__count">{{ site.talks | size }} {{ archive_count_label }}</p>{% elsif page.translation_key == 'teaching' %}<p class="editorial-archive__count">{{ site.teaching | size }} {{ archive_count_label }}</p>{% endif %}
+      <h1 class="page__title editorial-title">{{ page.title }}</h1>
+    </header>
     {% endunless %}
-    {{ content }}
+    <div class="editorial-archive__content">{{ content }}</div>
   </div>
-</div>
+</main>
