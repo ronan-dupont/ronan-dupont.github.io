@@ -12,7 +12,7 @@ cv_profile:
   intro: Je suis chercheur postdoctoral à l’Université de Nagoya. Mes travaux portent sur l’algèbre linéaire numérique
     et les méthodes itératives pour les grands systèmes creux.
   download: Télécharger le CV français
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf?v=20260914
   pdf_label: Édition française
   pdf_note: PDF · 3 pages
   pdf_open: Lire dans le navigateur
@@ -63,6 +63,23 @@ cv_profile:
     - Cours de master en hydromorphodynamique côtière, modélisation avec OptiMorph et Python.
   teaching_link: Consulter les supports de cours
   teaching_url: /fr/teaching/
+  service_title: Conférence et responsabilités scientifiques
+  service_date: 14 septembre 2026
+  service_event: ICMASE 2026
+  service_location: Nagoya, Japon
+  service_talk: 'Présentation : GPBiCG(m, ℓ, k) — An Extension of GPBiCG(m, ℓ) and Preliminary Adaptive Parameter Strategies.'
+  service_role: 'Responsabilité scientifique : présidence de sessions.'
+  service_resources_label: Présentation ICMASE et ressources associées
+  service_poster_note: Le poster A0 associé a été préparé pour le projet Moonshot.
+  service_links:
+  - - Page de la présentation
+    - /talks/ICMASE2026/
+  - - Diapositives · PDF statique
+    - /files/presentation/ICMASE2026_ultra_handout.pdf?v=20
+  - - Présentation progressive · PDF
+    - /files/presentation/ICMASE2026_ultra_progressive.pdf?v=20
+  - - Poster Moonshot associé · PDF A0
+    - /files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf?v=19
   more_title: Découvrir mes travaux
   more:
   - - Publications

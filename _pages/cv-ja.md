@@ -11,7 +11,7 @@ cv_profile:
   headline: 応用数学と科学技術計算
   intro: 名古屋大学の博士研究員として、数値線形代数と大規模疎線形方程式に対する反復解法を研究しています。
   download: 日本語CVをダウンロード
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf?v=20260914
   pdf_label: 日本語版
   pdf_note: PDF · 3ページ
   pdf_open: ブラウザで読む
@@ -60,6 +60,23 @@ cv_profile:
     - 修士課程で沿岸域の水理・地形変化、OptiMorphによるモデリング、Pythonを担当。
   teaching_link: 教材を見る
   teaching_url: /ja/teaching/
+  service_title: 学会発表・学術活動
+  service_date: 2026年9月14日
+  service_event: ICMASE 2026
+  service_location: 日本・名古屋
+  service_talk: '発表：GPBiCG(m, ℓ, k) — An Extension of GPBiCG(m, ℓ) and Preliminary Adaptive Parameter Strategies.'
+  service_role: 学術活動：セッション座長。
+  service_resources_label: ICMASE発表と関連資料
+  service_poster_note: 関連するA0ポスターはMoonshotプロジェクトのために作成したものです。
+  service_links:
+  - - 発表紹介
+    - /talks/ICMASE2026/
+  - - 配布用スライド · PDF
+    - /files/presentation/ICMASE2026_ultra_handout.pdf?v=20
+  - - 段階表示スライド · PDF
+    - /files/presentation/ICMASE2026_ultra_progressive.pdf?v=20
+  - - 関連Moonshotポスター · A0 PDF
+    - /files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf?v=19
   more_title: 研究活動を見る
   more:
   - - 研究業績

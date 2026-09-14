@@ -12,7 +12,7 @@ cv_profile:
   intro: I am a postdoctoral researcher at Nagoya University, working on numerical linear algebra and iterative
     methods for large sparse systems.
   download: Download English CV
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf?v=20260914
   pdf_label: English edition
   pdf_note: PDF · 3 pages
   pdf_open: Read in your browser
@@ -62,6 +62,23 @@ cv_profile:
     - Master’s courses in coastal hydromorphodynamics, OptiMorph modelling and Python.
   teaching_link: Explore teaching materials
   teaching_url: /teaching/
+  service_title: Conference and academic service
+  service_date: 14 September 2026
+  service_event: ICMASE 2026
+  service_location: Nagoya, Japan
+  service_talk: 'Presentation: GPBiCG(m, ℓ, k) — An Extension of GPBiCG(m, ℓ) and Preliminary Adaptive Parameter Strategies.'
+  service_role: 'Academic service: session chair.'
+  service_resources_label: ICMASE presentation and associated resources
+  service_poster_note: The associated A0 poster was prepared for the Moonshot project.
+  service_links:
+  - - Talk page
+    - /talks/ICMASE2026/
+  - - Handout PDF
+    - /files/presentation/ICMASE2026_ultra_handout.pdf?v=20
+  - - Progressive presentation PDF
+    - /files/presentation/ICMASE2026_ultra_progressive.pdf?v=20
+  - - Associated Moonshot poster · A0 PDF
+    - /files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf?v=19
   more_title: Explore my work
   more:
   - - Publications

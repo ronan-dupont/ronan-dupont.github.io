@@ -65,6 +65,29 @@
     </div>
   </div>
 
+  {% if profile.service_event %}
+  <section class="profile-page__service" aria-labelledby="cv-service-heading">
+    <h2 id="cv-service-heading">{{ profile.service_title }}</h2>
+    <ul class="profile-page__timeline">
+      <li>
+        <p class="profile-page__date">{{ profile.service_date }}</p>
+        <div>
+          <h3>{{ profile.service_event }}</h3>
+          <p class="profile-page__institution">{{ profile.service_location }}</p>
+          <p>{{ profile.service_talk }}</p>
+          <p>{{ profile.service_role }}</p>
+          <nav class="profile-page__service-links" aria-label="{{ profile.service_resources_label | escape }}">
+            {% for resource in profile.service_links %}
+            <a class="profile-page__text-link" href="{{ resource[1] | relative_url }}">{{ resource[0] }} <span aria-hidden="true">↗</span></a>
+            {% endfor %}
+          </nav>
+          <p class="profile-page__service-note">{{ profile.service_poster_note }}</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  {% endif %}
+
   <section class="profile-page__explore" aria-labelledby="cv-explore-heading">
     <h2 id="cv-explore-heading">{{ profile.more_title }}</h2>
     <div>
