@@ -1,4 +1,5 @@
 {% assign latest_talk = site.talks | sort: 'date' | last %}{% if latest_talk %}
+{% include editorial-labels.html %}
 {% assign latest_lang = page.lang | default: 'en' %}{% assign latest_title_key = 'title_' | append: latest_lang %}{% assign latest_title = latest_talk[latest_title_key] | default: latest_talk.title %}
 <section class="latest-talk" aria-labelledby="latest-talk-title">
   {% if latest_talk.cover %}<a class="latest-talk__cover" href="{{ latest_talk.url | relative_url }}" aria-label="{{ latest_title | escape }}"><img src="{{ latest_talk.cover | relative_url }}" alt="" width="1600" height="1200" loading="lazy" decoding="async"><span aria-hidden="true">↗</span></a>{% endif %}
@@ -7,10 +8,12 @@
     <h2 id="latest-talk-title"><a href="{{ latest_talk.url | relative_url }}">{{ latest_title }}</a></h2>
     {% assign latest_excerpt_key = 'excerpt_' | append: latest_lang %}<p class="latest-talk__excerpt">{{ latest_talk[latest_excerpt_key] | default: latest_talk.excerpt }}</p>
     <a class="latest-talk__action" href="{{ latest_talk.url | relative_url }}">{% if latest_lang == 'fr' %}Voir la présentation{% elsif latest_lang == 'ja' %}発表を見る{% else %}Explore the presentation{% endif %}<span aria-hidden="true">↗</span></a>
-    {% if latest_talk.slides_handout or latest_talk.slides_progressive or latest_talk.poster %}<div class="latest-talk__resources">
+    {% if latest_talk.slides_pdf or latest_talk.slides_pptx or latest_talk.slides_handout or latest_talk.slides_progressive or latest_talk.poster %}<div class="latest-talk__resources">
+      {% if latest_talk.slides_pdf %}<a href="{{ latest_talk.slides_pdf | relative_url | escape }}">{{ editorial_slides }}</a>{% endif %}
+      {% if latest_talk.slides_pptx %}<a href="{{ latest_talk.slides_pptx | relative_url | escape }}">{{ editorial_powerpoint }}</a>{% endif %}
       {% if latest_talk.slides_handout %}<a href="{{ latest_talk.slides_handout | relative_url }}">{% if latest_lang == 'fr' %}PDF complet{% elsif latest_lang == 'ja' %}配布用PDF{% else %}Handout PDF{% endif %}</a>{% endif %}
       {% if latest_talk.slides_progressive %}<a href="{{ latest_talk.slides_progressive | relative_url }}">{% if latest_lang == 'fr' %}PDF progressif{% elsif latest_lang == 'ja' %}段階表示PDF{% else %}Progressive PDF{% endif %}</a>{% endif %}
-      {% if latest_talk.poster %}<a href="{{ latest_talk.poster | relative_url }}">{% if latest_lang == 'ja' %}Moonshotポスター{% else %}Poster Moonshot{% endif %}</a>{% endif %}
+      {% if latest_talk.poster %}{% assign latest_poster_label_key = 'poster_label_' | append: latest_lang %}<a href="{{ latest_talk.poster | relative_url | escape }}">{{ latest_talk[latest_poster_label_key] | default: latest_talk.poster_label | default: editorial_poster | escape }}</a>{% endif %}
     </div>{% endif %}
   </div>
 </section>

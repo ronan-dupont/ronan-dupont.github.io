@@ -14,6 +14,7 @@ location_fr: "Naples, Italie"
 location_ja: "ナポリ, イタリア"
 excerpt_fr: "Présentation sur la résolution numérique de l'équation mild-slope par la méthode des éléments virtuels."
 excerpt_ja: "Virtual Element Methodによるmild-slope方程式の数値解法に関する発表。"
+slides_pdf: "/files/presentation/numerics2024.pdf"
 ---
 
 This year's NuMerics2024 (Numerical Methods for Problems in Fluid Dynamics) was held on Naples. Participants were there to present their work on mathematics applied to fluid dynamics problems.

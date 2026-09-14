@@ -14,6 +14,7 @@ location_fr: "Chatou, France"
 location_ja: "シャトゥー, フランス"
 excerpt_fr: "Communication orale lors des Journées Nationales Génie Côtier - Génie Civil."
 excerpt_ja: "沿岸工学・土木工学全国会議における口頭発表。"
+slides_pdf: "/files/presentation/JNGCGC22_Slides_DUPONT_Ronan.pdf"
 ---
 
 XVIIth edition of the National Days of Coastal Engineering - Civil Engineering.

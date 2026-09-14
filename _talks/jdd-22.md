@@ -16,6 +16,8 @@ location_fr: "Montpellier, France"
 location_ja: "モンペリエ, フランス"
 excerpt_fr: "Présentation des travaux de première année de doctorat à l'Université de Montpellier."
 excerpt_ja: "モンペリエ大学における博士課程1年目の研究発表。"
+slides_pdf: "/files/presentation/JDD_Slides_DUPONT_Ronan.pdf"
+poster: "/files/poster/JDD_poster_DUPONT_Ronan.pdf"
 ---
 
 First-year doctoral students present their work at the university for a full day.

@@ -1,9 +1,11 @@
 {% assign editorial_lang = page.lang | default: "en" %}
 {% if editorial_lang == "fr" %}
   {% assign editorial_pdf = "Lire le PDF" %}
+  {% assign editorial_slides = "Diapositives · PDF" %}
+  {% assign editorial_powerpoint = "PowerPoint · PPTX" %}
   {% assign editorial_handout = "Diapositives · PDF complet" %}
   {% assign editorial_progressive = "Présentation · PDF progressif" %}
-  {% assign editorial_poster = "Poster Moonshot · A0" %}
+  {% assign editorial_poster = "Poster · PDF" %}
   {% assign editorial_downloads = "Documents" %}
   {% assign editorial_reference = "Référence bibliographique" %}
   {% assign editorial_previous = "Précédent" %}
@@ -18,9 +20,11 @@
   {% assign editorial_prefix = "/fr" %}
 {% elsif editorial_lang == "ja" %}
   {% assign editorial_pdf = "PDFを読む" %}
+  {% assign editorial_slides = "スライド · PDF" %}
+  {% assign editorial_powerpoint = "PowerPoint · PPTX" %}
   {% assign editorial_handout = "スライド · 配布用PDF" %}
   {% assign editorial_progressive = "発表 · 段階表示PDF" %}
-  {% assign editorial_poster = "Moonshotポスター · A0" %}
+  {% assign editorial_poster = "ポスター · PDF" %}
   {% assign editorial_downloads = "資料" %}
   {% assign editorial_reference = "引用情報" %}
   {% assign editorial_previous = "前の記事" %}
@@ -35,9 +39,11 @@
   {% assign editorial_prefix = "/ja" %}
 {% else %}
   {% assign editorial_pdf = "Read PDF" %}
+  {% assign editorial_slides = "Slides · PDF" %}
+  {% assign editorial_powerpoint = "PowerPoint · PPTX" %}
   {% assign editorial_handout = "Slides · Handout PDF" %}
   {% assign editorial_progressive = "Presentation · Progressive PDF" %}
-  {% assign editorial_poster = "Moonshot poster · A0" %}
+  {% assign editorial_poster = "Poster · PDF" %}
   {% assign editorial_downloads = "Downloads" %}
   {% assign editorial_reference = "Recommended citation" %}
   {% assign editorial_previous = "Previous" %}

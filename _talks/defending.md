@@ -16,6 +16,7 @@ location_fr: "Montpellier, France"
 location_ja: "モンペリエ, フランス"
 excerpt_fr: "Soutenance de doctorat à Montpellier sur le couplage vague-morphodynamique du littoral par principes de minimisation."
 excerpt_ja: "最小化原理に基づく沿岸域の波浪・地形変化結合モデルに関する博士論文公聴会。"
+slides_pdf: "/files/presentation/planches_soutenance.pdf"
 ---
 
 On September 30, 2024, I defended my thesis in Montpellier.

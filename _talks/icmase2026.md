@@ -8,17 +8,23 @@ type_fr: "Présentation en conférence"
 type_ja: "学会発表"
 permalink: /talks/ICMASE2026/
 venue: "ICMASE 2026"
+location: "Nagoya, Japan"
+location_fr: "Nagoya, Japon"
+location_ja: "名古屋, 日本"
 date: 2026-09-14
 cover: /images/talks/icmase2026-cover.jpg
 slides_handout: "/files/presentation/ICMASE2026_ultra_handout.pdf?v=20"
 slides_progressive: "/files/presentation/ICMASE2026_ultra_progressive.pdf?v=20"
 poster: "/files/poster/Moonshot_GPBiCG_MLK_A0_portrait.pdf?v=19"
+poster_label: "Moonshot poster · A0"
+poster_label_fr: "Poster Moonshot · A0"
+poster_label_ja: "Moonshotポスター · A0"
 excerpt: "An extension of GPBiCG(m, ℓ) and preliminary adaptive parameter strategies for nonsymmetric linear systems."
 excerpt_fr: "Une extension de GPBiCG(m, ℓ) et des stratégies adaptatives préliminaires pour les systèmes linéaires non symétriques."
 excerpt_ja: "非対称線形方程式系に対するGPBiCG(m, ℓ)の拡張と予備的な適応パラメータ戦略。"
 ---
 
-My presentation at ICMASE 2026, on September 14, 2026, focuses on **GPBiCG(m, ℓ, k): An Extension of GPBiCG(m, ℓ) and Preliminary Adaptive Parameter Strategies**. This research is carried out in the Zhang–Sogabe Laboratory at Nagoya University, under the supervision of Tomohiro Sogabe and Shao-Liang Zhang.
+My presentation at ICMASE 2026 in Nagoya, Japan, on September 14, 2026, focuses on **GPBiCG(m, ℓ, k): An Extension of GPBiCG(m, ℓ) and Preliminary Adaptive Parameter Strategies**. This research is carried out in the Zhang–Sogabe Laboratory at Nagoya University, under the supervision of Tomohiro Sogabe and Shao-Liang Zhang.
 
 The talk focuses on iterative methods for solving nonsymmetric linear systems. GPBiCG(m, ℓ, k) extends GPBiCG(m, ℓ) by adding a third phase based on an orthogonality condition. This gives the solver more ways to reduce the residual, but also introduces another parameter to choose.
 

@@ -14,6 +14,8 @@ location_fr: "Île d'Aix, France"
 location_ja: "エクス島, フランス"
 excerpt_fr: "Présentation du modèle OptiMorph forcé par un modèle de vagues à phases résolues."
 excerpt_ja: "位相解像波浪モデルにより駆動されるOptiMorphモデルに関する発表。"
+slides_pdf: "/files/presentation/Slides_Dupont_Ronan_JMVPR.pdf"
+slides_pptx: "/files/presentation/Slides_Dupont_Ronan_JMVPR.pptx"
 ---
 
 This year's JMVPR (Journées de Modélisation des Vagues à Phases Résolues) was held on the Ile d'Aix. Participants were there to present their work on mathematics applied to wave-to-wave resolution hydrodynamics.

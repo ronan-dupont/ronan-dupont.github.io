@@ -16,6 +16,7 @@ location_fr: "La Grande-Motte, France"
 location_ja: "ラ・グランド＝モット, フランス"
 excerpt_fr: "Poster sur une nouvelle méthode de calcul hydro-morphodynamique côtier."
 excerpt_ja: "沿岸水理・地形変化計算のための新しい手法に関するポスター発表。"
+poster: "/files/poster/Poster_Salon_du_littoral_2021.pdf"
 ---
 
 The fourth edition of the International Coastal Exhibition took place as usual in La Grande-Motte on November 23 and 24, despite a difficult health context. 
