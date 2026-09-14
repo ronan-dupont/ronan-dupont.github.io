@@ -12,7 +12,7 @@ cv_profile:
   intro: I am a postdoctoral researcher at Nagoya University, working on numerical linear algebra and iterative
     methods for large sparse systems.
   download: Download English CV
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf?v=20260914b
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf?v=20260914c
   pdf_label: English edition
   pdf_note: PDF · 3 pages
   pdf_open: Read in your browser

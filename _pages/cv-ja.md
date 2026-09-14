@@ -11,7 +11,7 @@ cv_profile:
   headline: 応用数学と科学技術計算
   intro: 名古屋大学の博士研究員として、数値線形代数と大規模疎線形方程式に対する反復解法を研究しています。
   download: 日本語CVをダウンロード
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf?v=20260914b
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf?v=20260914c
   pdf_label: 日本語版
   pdf_note: PDF · 3ページ
   pdf_open: ブラウザで読む
