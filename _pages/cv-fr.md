@@ -12,7 +12,7 @@ cv_profile:
   intro: Je suis chercheur postdoctoral à l’Université de Nagoya. Mes travaux portent sur l’algèbre linéaire numérique
     et les méthodes itératives pour les grands systèmes creux.
   download: Télécharger le CV français
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf?v=20260914
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf?v=20260914b
   pdf_label: Édition française
   pdf_note: PDF · 3 pages
   pdf_open: Lire dans le navigateur
