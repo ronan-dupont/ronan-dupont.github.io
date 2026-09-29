@@ -12,7 +12,7 @@ cv_profile:
   intro: Je suis chercheur postdoctoral à l’Université de Nagoya. Mes travaux portent sur l’algèbre linéaire numérique
     et les méthodes itératives pour les grands systèmes creux.
   download: Télécharger le CV français
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf?v=20260914c
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_FR.pdf?v=20260929
   pdf_label: Édition française
   pdf_note: PDF · 3 pages
   pdf_open: Lire dans le navigateur
@@ -56,9 +56,9 @@ cv_profile:
     programmation.
   teaching:
   - - '2025'
-    - Mathématiques au lycée à Bordeaux et à l’EFI de Phnom Penh, au Cambodge.
+    - Enseignement des mathématiques à Saint-Joseph de Tivoli à Bordeaux et à l’EFI de Phnom Penh, ainsi que cours particuliers à Eurêka Tutoring Centre à Phnom Penh.
   - - 2023–2024
-    - Algèbre, calcul, cardinalité et géométrie en première année de licence à l’Université de Montpellier.
+    - Cours particuliers en algèbre, calcul, cardinalité et géométrie en première année de licence à l’Université de Montpellier.
   - - '2023'
     - Cours de master en hydromorphodynamique côtière, modélisation avec OptiMorph et Python.
   teaching_link: Consulter les supports de cours

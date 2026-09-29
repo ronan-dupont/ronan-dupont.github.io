@@ -11,7 +11,7 @@ cv_profile:
   headline: 応用数学と科学技術計算
   intro: 名古屋大学の博士研究員として、数値線形代数と大規模疎線形方程式に対する反復解法を研究しています。
   download: 日本語CVをダウンロード
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf?v=20260914c
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont_JP.pdf?v=20260929
   pdf_label: 日本語版
   pdf_note: PDF · 3ページ
   pdf_open: ブラウザで読む
@@ -53,9 +53,9 @@ cv_profile:
   teaching_intro: 大学と高校で、数学、モデリング、プログラミングの教育に携わってきました。
   teaching:
   - - 2025年
-    - フランス・ボルドーおよびカンボジア・プノンペンのEFIで高校数学を担当。
+    - ボルドーのSaint-Joseph de TivoliとプノンペンのEFIで数学を担当。プノンペンのEurêka Tutoring Centreでは数学の個別指導を担当。
   - - 2023–2024年
-    - モンペリエ大学の学部1年次に、代数、微積分、濃度、幾何を担当。
+    - モンペリエ大学の学部1年次の代数、微積分、濃度、幾何について個別指導を担当。
   - - 2023年
     - 修士課程で沿岸域の水理・地形変化、OptiMorphによるモデリング、Pythonを担当。
   teaching_link: 教材を見る

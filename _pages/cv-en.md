@@ -12,7 +12,7 @@ cv_profile:
   intro: I am a postdoctoral researcher at Nagoya University, working on numerical linear algebra and iterative
     methods for large sparse systems.
   download: Download English CV
-  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf?v=20260914c
+  pdf: /files/Curriculum_Vitae_Ronan_Dupont.pdf?v=20260929
   pdf_label: English edition
   pdf_note: PDF · 3 pages
   pdf_open: Read in your browser
@@ -55,9 +55,9 @@ cv_profile:
   teaching_intro: Experience in university and secondary education, combining mathematics, modelling and programming.
   teaching:
   - - '2025'
-    - Secondary-school mathematics in Bordeaux, France, and at EFI in Phnom Penh, Cambodia.
+    - Mathematics teaching at Saint-Joseph de Tivoli in Bordeaux and EFI in Phnom Penh, plus private tutoring at Eurêka Tutoring Centre in Phnom Penh.
   - - 2023–2024
-    - Undergraduate algebra, calculus, cardinality and geometry at the University of Montpellier.
+    - Private tutoring in undergraduate algebra, calculus, cardinality and geometry at the University of Montpellier.
   - - '2023'
     - Master’s courses in coastal hydromorphodynamics, OptiMorph modelling and Python.
   teaching_link: Explore teaching materials
