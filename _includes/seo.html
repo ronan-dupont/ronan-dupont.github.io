@@ -8,15 +8,17 @@
 {% assign canonical_url = page.url | replace: "index.html", "" | prepend: seo_url %}
 
 {% assign raw_seo_title = page.seo_title | default: page.title | default: site.title %}
-{% assign seo_title = raw_seo_title | markdownify | strip_html | strip_newlines | escape_once %}
-{% assign full_seo_title = seo_title %}
-{% unless seo_title contains site.title %}
-  {% assign full_seo_title = seo_title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+{% assign seo_title_plain = raw_seo_title | markdownify | strip_html | strip_newlines %}
+{% assign full_seo_title_plain = seo_title_plain %}
+{% unless seo_title_plain contains site.title %}
+  {% assign full_seo_title_plain = seo_title_plain | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endunless %}
+{% assign full_seo_title = full_seo_title_plain | escape_once %}
 
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% assign raw_seo_description = page.description | default: page.excerpt | default: site.description %}
+{% if raw_seo_description %}
+  {% assign seo_description_plain = raw_seo_description | markdownify | strip_html | strip_newlines %}
+  {% assign seo_description = seo_description_plain | escape_once %}
 {% endif %}
 
 {% if page.lang == "fr" %}
@@ -135,8 +137,8 @@
       "@type": "WebPage",
       "@id": {{ canonical_url | append: "#webpage" | jsonify }},
       "url": {{ canonical_url | jsonify }},
-      "name": {{ full_seo_title | jsonify }},
-      "description": {{ seo_description | default: site.description | jsonify }},
+      "name": {{ full_seo_title_plain | jsonify }},
+      "description": {{ seo_description_plain | default: site.description | jsonify }},
       "isPartOf": { "@id": {{ seo_url | append: "/#website" | jsonify }} },
       "about": { "@id": {{ seo_url | append: "/#person" | jsonify }} }
     }
