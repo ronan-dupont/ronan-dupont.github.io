@@ -3,8 +3,17 @@ title: "Sandy beach dynamics by constrained wave energy minimization"
 collection: publications
 permalink: /publication/2023_sandy_beach_dynamics
 excerpt: ''
+description: "Ronan Dupont and coauthors' 2023 Ocean Modelling article on coastal morphodynamics using constrained wave-energy minimization and the OptiMorph model."
 date: 2023-04-16
 venue: 'Ocean Modelling'
+volume: "183"
+authors:
+  - "Ronan Dupont"
+  - "Megan Cook"
+  - "Frédéric Bouchette"
+  - "Bijan Mohammadi"
+  - "Samuel Meulé"
+doi: "10.1016/j.ocemod.2023.102197"
 paperurl: "/files/paper/2023_sandy_beach_dynamics.pdf"
 
 citation: 'Dupont, Ronan, Megan Cook, Frédéric Bouchette, Bijan Mohammadi, and Samuel Meulé (2023). “Sandy beach dynamics by constrained wave energy minimization”. In: Ocean Modelling, p. 102197. DOI: doi.org/10.1016/j.ocemod.2023.102197.'
