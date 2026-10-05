@@ -1,3 +1,9 @@
+---
+title: "OptiMorph 1D"
+sitemap: false
+noindex: true
+---
+
 # OptiMorph 1D
 
 This is the OptiMorph version in 1D working in a cluster using SWAN or XBeach.
