@@ -3,8 +3,15 @@ title: "OptiMorph : un modèle de morphodynamique du littoral par principe de mi
 collection: publications
 permalink: /publication/2022-optimorph
 excerpt: ''
+description: "Ronan Dupont, Frédéric Bouchette, Bijan Mohammadi and Damien Sous on the OptiMorph coastal morphodynamics model, sensitivity analysis and multi-1D applications."
 date: 2022-01-01
 venue: 'Editions Paralia'
+authors:
+  - "Ronan Dupont"
+  - "Frédéric Bouchette"
+  - "Bijan Mohammadi"
+  - "Damien Sous"
+doi: "10.5150/jngcgc.2022.034"
 paperurl: "/files/paper/2022_optimorph.pdf"
 
 citation: 'DUPONT, Ronan, Frédéric BOUCHETTE, Bijan MOHAMMADI, and Damien SOUS (2022). “OptiMorph: un modèle de morphodynamique du littoral par principe de minimisation. Analyse de sensibilité en 1D et application Multi-1D”. In: JNGCGC 17, pp. 327–336. DOI: doi.org/10.5150/jngcgc.2022.034.'
