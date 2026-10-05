@@ -29,12 +29,22 @@
   {% assign og_locale = "en_US" %}
 {% endif %}
 
+{% assign publication_pdf_url = nil %}
+{% if page.collection == "publications" and page.paperurl %}
+  {% if page.paperurl contains "://" %}
+    {% assign publication_pdf_url = page.paperurl %}
+  {% else %}
+    {% assign publication_pdf_url = page.paperurl | prepend: seo_url %}
+  {% endif %}
+{% endif %}
+
 <title>{{ full_seo_title }}</title>
 {% if seo_description %}
 <meta name="description" content="{{ seo_description }}">
 {% endif %}
 <meta name="author" content="{{ site.author.name | default: site.name }}">
 <link rel="canonical" href="{{ canonical_url }}">
+{% if page.noindex %}<meta name="robots" content="noindex,follow">{% endif %}
 
 <meta property="og:locale" content="{{ og_locale }}">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -85,6 +95,22 @@
   {% endif %}
 {% endif %}
 
+{% if page.collection == "publications" and page.authors %}
+<!-- Highwire / Google Scholar citation metadata -->
+<meta name="citation_title" content="{{ page.title | strip_html | escape }}">
+{% for publication_author in page.authors %}<meta name="citation_author" content="{{ publication_author | escape }}">
+{% endfor %}
+{% if page.date %}<meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">{% endif %}
+{% if page.publication_type == "thesis" %}
+<meta name="citation_dissertation_institution" content="{{ page.venue | escape }}">
+{% elsif page.venue %}
+<meta name="citation_journal_title" content="{{ page.venue | escape }}">
+{% endif %}
+{% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
+{% if publication_pdf_url %}<meta name="citation_pdf_url" content="{{ publication_pdf_url | escape }}">{% endif %}
+{% endif %}
+
 {% if paginator.previous_page %}<link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">{% endif %}
 {% if paginator.next_page %}<link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">{% endif %}
 
@@ -92,6 +118,8 @@
 {% if site.author.researchgate %}<link rel="me" href="{{ site.author.researchgate }}">{% endif %}
 {% if site.author.github %}<link rel="me" href="https://github.com/{{ site.author.github }}">{% endif %}
 {% if site.author.linkedin %}<link rel="me" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{% endif %}
+<link rel="me" href="https://na.nuap.nagoya-u.ac.jp/member/">
+<link rel="me" href="https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202601003611729927">
 
 <script type="application/ld+json">
 {
@@ -101,28 +129,43 @@
       "@type": "Person",
       "@id": {{ seo_url | append: "/#person" | jsonify }},
       "name": {{ site.author.name | default: site.name | jsonify }},
+      "alternateName": ["Ronan DUPONT", "Dupont Ronan", "デュポン ロナン"],
       "url": {{ seo_url | jsonify }},
       "description": {{ site.description | jsonify }},
       "jobTitle": "Postdoctoral researcher in applied mathematics and numerical linear algebra",
       "affiliation": {
         "@type": "CollegeOrUniversity",
-        "name": "Nagoya University"
+        "name": "Nagoya University",
+        "url": "https://www.nagoya-u.ac.jp/"
       },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Zhang–Sogabe Laboratory",
+        "url": "https://na.nuap.nagoya-u.ac.jp/"
+      },
+      "identifier": [
+        {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0003-2260-0755"},
+        {"@type": "PropertyValue", "propertyID": "J-GLOBAL", "value": "202601003611729927"}
+      ],
       "knowsAbout": [
         "Applied mathematics",
         "Numerical linear algebra",
         "Scientific computing",
         "Iterative methods",
         "Krylov subspace methods",
+        "Preconditioning",
         "Sparse linear systems",
         "Virtual element methods",
+        "Helmholtz equation",
         "Coastal morphodynamics"
       ],
       "sameAs": [
         {{ site.author.orcid | jsonify }},
         {{ site.author.researchgate | jsonify }},
         {{ "https://github.com/" | append: site.author.github | jsonify }},
-        {{ "https://www.linkedin.com/in/" | append: site.author.linkedin | jsonify }}
+        {{ "https://www.linkedin.com/in/" | append: site.author.linkedin | jsonify }},
+        "https://na.nuap.nagoya-u.ac.jp/member/",
+        "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202601003611729927"
       ]
     },
     {
@@ -141,7 +184,21 @@
       "description": {{ seo_description_plain | default: site.description | jsonify }},
       "isPartOf": { "@id": {{ seo_url | append: "/#website" | jsonify }} },
       "about": { "@id": {{ seo_url | append: "/#person" | jsonify }} }
-    }
+    }{% if page.collection == "publications" and page.authors %},
+    {
+      "@type": {% if page.publication_type == "thesis" %}"CreativeWork"{% else %}"ScholarlyArticle"{% endif %},
+      "@id": {{ canonical_url | append: "#scholarly-work" | jsonify }},
+      "headline": {{ page.title | strip_html | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "author": [
+        {% for publication_author in page.authors %}{% if publication_author == site.author.name %}{"@type": "Person", "@id": {{ seo_url | append: "/#person" | jsonify }}, "name": {{ publication_author | jsonify }}}{% else %}{"@type": "Person", "name": {{ publication_author | jsonify }}}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
+      ],
+      "mainEntityOfPage": { "@id": {{ canonical_url | append: "#webpage" | jsonify }} }{% if page.venue %},
+      "isPartOf": {"@type": {% if page.publication_type == "thesis" %}"EducationalOrganization"{% else %}"Periodical"{% endif %}, "name": {{ page.venue | jsonify }}}{% endif %}{% if page.doi %},
+      "sameAs": {{ "https://doi.org/" | append: page.doi | jsonify }}{% endif %}{% if publication_pdf_url %},
+      "encoding": {"@type": "MediaObject", "contentUrl": {{ publication_pdf_url | jsonify }}, "encodingFormat": "application/pdf"}{% endif %}
+    }{% endif %}
   ]
 }
 </script>
