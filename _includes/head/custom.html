@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#081d3b">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+{% if page.translation_key == 'home' %}
 <!-- Additional researcher identity evidence. The @id matches the Person node from seo.html. -->
 <script type="application/ld+json">
 {
@@ -48,6 +49,7 @@
   ]
 }
 </script>
+{% endif %}
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
