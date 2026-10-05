@@ -1,12 +1,23 @@
-# Ronan Dupont Academic Website
+# Ronan Dupont — Academic Website
 
-Personal academic website for Ronan Dupont, built with Jekyll and GitHub Pages.
+Official personal academic website of **Ronan Dupont**, postdoctoral researcher at **Nagoya University** working on numerical linear algebra, iterative methods, sparse linear systems and scientific computing.
+
+**Live website:** https://ronan-dupont.github.io/
+
+Research topics include numerical linear algebra, Krylov subspace methods, preconditioning, Virtual Element Methods, Helmholtz problems and coastal morphodynamics.
+
+Academic identifiers and profiles:
+
+- ORCID: https://orcid.org/0000-0003-2260-0755
+- J-GLOBAL: https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202601003611729927
+- ResearchGate: https://www.researchgate.net/profile/Ronan-Dupont
+- Nagoya University / Zhang–Sogabe Laboratory: https://na.nuap.nagoya-u.ac.jp/member/
 
 The site includes:
 
 - English, French and Japanese landing pages.
-- Localized navigation and author profile text.
-- Publication, talk, teaching and CV pages.
+- Publication pages with DOI and Google Scholar-compatible citation metadata.
+- Research talks, teaching material and CV pages.
 - A modern research-oriented visual layer on top of the Academic Pages / Minimal Mistakes structure.
 
 ## Local Development
@@ -65,6 +76,6 @@ Then hard-refresh the browser.
 
 ## Deployment
 
-The site is intended for GitHub Pages deployment from the repository root. Commit content and style changes, push to GitHub, and let GitHub Pages rebuild the site.
+The site is deployed with GitHub Pages from the repository root. Changes merged into `main` trigger a GitHub Pages rebuild.
 
 Local-only artifacts such as `_site/`, `.bundle/`, `.jekyll-cache/` and `vendor/bundle/` are ignored.
