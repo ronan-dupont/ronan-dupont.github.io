@@ -3,8 +3,13 @@ title: "An Arbitrary-Order Virtual Element Method for the Helmholtz Equation App
 collection: publications
 permalink: /publication/2025-vem-helmholtz
 excerpt: ''
+description: "Ronan Dupont's 2025 article on arbitrary-order Virtual Element Methods for the Helmholtz equation, Robin boundary conditions and wave-field calculation in ports."
 date: 2025-01-01
 venue: 'Results in Applied Mathematics'
+volume: "26"
+authors:
+  - "Ronan Dupont"
+doi: "10.1016/j.rinam.2025.100598"
 paperurl: "/files/paper/2025_vem_robin.pdf"
 
 citation: 'Dupont, Ronan (2025). “An Arbitrary-Order Virtual Element Method for the Helmholtz Equation Applied to Wave Field Calculation in Port”. In: Results in Applied Mathematics, p. 100598. DOI: doi.org/10.1016/j.rinam.2025.100598.'
