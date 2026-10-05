@@ -1,5 +1,6 @@
 ---
 title: "Manuscript - Couplage vagues-morphodynamique du littoral par principe de minimisation"
+scholar_title: "Couplage vagues-morphodynamique du littoral par principe de minimisation"
 collection: publications
 permalink: /publication/2024_manuscript
 excerpt: ''
@@ -7,20 +8,20 @@ description: "Ronan Dupont's 2024 PhD thesis at the University of Montpellier on
 date: 2024-09-30
 venue: 'University of Montpellier'
 publication_type: thesis
+publication_language: "fr"
 authors:
   - "Ronan Dupont"
 paperurl: "/files/manuscript_final.pdf"
 
-citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. In: University of Montpellier.'
+citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. PhD thesis, University of Montpellier.'
 ---
-In the face of climate change, it has become crucial to understand and anticipate coastal phenomena such as beach erosion. 
+In the face of climate change, it has become crucial to understand and anticipate coastal phenomena such as beach erosion.
 
-Models for studying seabed variations (and hence erosion) are highly complex. In this thesis, we developed a simplified model to study this evolution under the effect of waves. Following observations, we based our model on the assumption that the seabed evolves in order to reduce wave amplitude.  
+Models for studying seabed variations (and hence erosion) are highly complex. In this thesis, we developed a simplified model to study this evolution under the effect of waves. Following observations, we based our model on the assumption that the seabed evolves in order to reduce wave amplitude.
 
-Thanks to mathematical methods, we were able to make our model generic and therefore usable by engineers or researchers interested in wave dynamics on a beach. 
+Thanks to mathematical methods, we were able to make our model generic and therefore usable by engineers or researchers interested in wave dynamics on a beach.
 
 Tested and validated on laboratory cases, this model can be used to optimize the design of coastal structures, reducing the effect of waves, and thus contribute to coastal management and protection.
 
-
-[[Download manuscript here]](http://ronan-dupont.github.io/files/manuscript_final.pdf)
+[[Download manuscript here]](https://ronan-dupont.github.io/files/manuscript_final.pdf)
 
