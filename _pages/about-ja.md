@@ -1,6 +1,8 @@
 ---
 permalink: /ja/
 title: "Ronan Dupont"
+seo_title: "Ronan Dupont | 応用数学・数値線形代数・科学技術計算"
+description: "Ronan Dupontは名古屋大学のポスドク研究者です。応用数学、数値線形代数、反復法、Krylov部分空間法、科学技術計算を研究しています。"
 excerpt: "プロフィール"
 lang: ja
 translation_key: home
