@@ -151,6 +151,10 @@ exclude:
   - scripts
   - DESIGN_SYSTEM.md
   - assets/fonts/manrope/README.md
+  - markdown_generator
+  - VISITOR_COUNTER
+  - talkmap
+  - talkmap.html
   - tmp
   - vendor
 keep_files:
