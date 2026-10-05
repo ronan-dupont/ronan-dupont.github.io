@@ -37,7 +37,7 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : _data/comments/{options.slug}
+  path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -89,8 +89,8 @@ author:
   location_fr      : "Nagoya, Japon"
   location_ja      : "名古屋, 日本"
   employer         :
-  pubmed           :
-  googlescholar    :
+  pubmed           : 
+  googlescholar    : 
   email            : "r-dupont@na.nuap.nagoya-u.ac.jp"
   researchgate     : "https://www.researchgate.net/profile/Ronan-Dupont"
   uri              :
@@ -100,7 +100,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "ronan-dupont"
+  github           : "ronan-dupont" 
   google_plus      :
   keybase          :
   instagram        :
@@ -288,7 +288,7 @@ whitelist:
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages Jekyll Archives plugin ~> type: jekyll-archives
+#  - Jekyll Archives plugin archive pages Jekyll Archives plugin archive pages ~> type: jekyll-archives
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
