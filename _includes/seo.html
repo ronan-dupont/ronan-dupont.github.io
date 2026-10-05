@@ -177,13 +177,13 @@
       "publisher": { "@id": {{ seo_url | append: "/#person" | jsonify }} }
     },
     {
-      "@type": "WebPage",
+      "@type": {% if page.translation_key == "home" %}"ProfilePage"{% else %}"WebPage"{% endif %},
       "@id": {{ canonical_url | append: "#webpage" | jsonify }},
       "url": {{ canonical_url | jsonify }},
       "name": {{ full_seo_title_plain | jsonify }},
       "description": {{ seo_description_plain | default: site.description | jsonify }},
       "isPartOf": { "@id": {{ seo_url | append: "/#website" | jsonify }} },
-      "about": { "@id": {{ seo_url | append: "/#person" | jsonify }} }
+      {% if page.translation_key == "home" %}"mainEntity": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% else %}"about": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% endif %}
     }{% if page.collection == "publications" and page.authors %},
     {
       "@type": {% if page.publication_type == "thesis" %}"CreativeWork"{% else %}"ScholarlyArticle"{% endif %},
