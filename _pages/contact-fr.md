@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: Contact
+seo_title: "Contacter Ronan Dupont | Université de Nagoya"
 permalink: /fr/contact/
 lang: fr
 translation_key: contact
