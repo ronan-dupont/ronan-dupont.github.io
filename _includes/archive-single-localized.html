@@ -10,17 +10,25 @@
 {% assign localized_location = post[location_key] | default: post.location %}
 {% assign localized_excerpt = post[excerpt_key] | default: post.excerpt %}
 <div class="{{ include.type | default: 'list' }}__item editorial-entry">
-  <article class="archive__item archive__item--localized editorial-entry__article" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--localized editorial-entry__article" itemscope itemtype="{% if post.collection == 'publications' %}https://schema.org/ScholarlyArticle{% else %}https://schema.org/CreativeWork{% endif %}">
     <div class="editorial-entry__year">{% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}"><span class="screen-reader-text">{{ editorial_year }} </span>{{ post.date | date: '%Y' }}</time>{% endif %}</div>
     <div class="editorial-entry__body">
       {% if localized_type or localized_venue or localized_location %}
       <p class="editorial-entry__meta">
         {% if localized_type %}<span>{{ localized_type }}</span>{% endif %}
-        {% if localized_venue %}<span>{{ localized_venue }}</span>{% endif %}
+        {% if localized_venue %}<span itemprop="isPartOf">{{ localized_venue }}</span>{% endif %}
         {% if localized_location %}<span>{{ localized_location }}</span>{% endif %}
       </p>
       {% endif %}
       <h2 class="archive__item-title" itemprop="headline"><a href="{{ post.url | relative_url }}" rel="permalink">{{ localized_title }}</a></h2>
+      {% if post.collection == "publications" %}
+        {% if post.authors or post.doi %}
+        <p class="editorial-entry__meta editorial-entry__scholar-meta">
+          {% if post.authors %}<span>{% for publication_author in post.authors %}<span itemprop="author">{{ publication_author }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+          {% if post.doi %}<span>DOI: <a href="https://doi.org/{{ post.doi }}" rel="external noopener" itemprop="sameAs">{{ post.doi }}</a></span>{% endif %}
+        </p>
+        {% endif %}
+      {% endif %}
       {% if localized_excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ localized_excerpt | markdownify | strip_html }}</p>{% endif %}
       {% include editorial-downloads.html item=post title=localized_title compact=true %}
     </div>

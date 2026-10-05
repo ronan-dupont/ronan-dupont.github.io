@@ -37,6 +37,7 @@
     {% assign publication_pdf_url = page.paperurl | prepend: seo_url %}
   {% endif %}
 {% endif %}
+{% assign scholarly_title = page.scholar_title | default: page.title %}
 
 <title>{{ full_seo_title }}</title>
 {% if seo_description %}
@@ -97,18 +98,28 @@
 
 {% if page.collection == "publications" and page.authors %}
 <!-- Highwire / Google Scholar citation metadata -->
-<meta name="citation_title" content="{{ page.title | strip_html | escape }}">
+<meta name="citation_title" content="{{ scholarly_title | strip_html | escape }}">
 {% for publication_author in page.authors %}<meta name="citation_author" content="{{ publication_author | escape }}">
 {% endfor %}
 {% if page.date %}<meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">{% endif %}
 {% if page.publication_type == "thesis" %}
 <meta name="citation_dissertation_institution" content="{{ page.venue | escape }}">
+{% elsif page.publication_type == "conference" %}
+<meta name="citation_conference_title" content="{{ page.venue | escape }}">
 {% elsif page.venue %}
 <meta name="citation_journal_title" content="{{ page.venue | escape }}">
 {% endif %}
+{% if page.issn %}<meta name="citation_issn" content="{{ page.issn | escape }}">{% endif %}
 {% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.issue %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
+{% if page.firstpage %}<meta name="citation_firstpage" content="{{ page.firstpage | escape }}">{% endif %}
+{% if page.lastpage %}<meta name="citation_lastpage" content="{{ page.lastpage | escape }}">{% endif %}
 {% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
-{% if publication_pdf_url %}<meta name="citation_pdf_url" content="{{ publication_pdf_url | escape }}">{% endif %}
+{% if page.publication_language %}<meta name="citation_language" content="{{ page.publication_language | escape }}">{% endif %}
+{% if publication_pdf_url %}
+<meta name="citation_pdf_url" content="{{ publication_pdf_url | escape }}">
+<meta name="citation_fulltext_world_readable" content="true">
+{% endif %}
 {% endif %}
 
 {% if paginator.previous_page %}<link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">{% endif %}
@@ -186,18 +197,26 @@
       {% if page.translation_key == "home" %}"mainEntity": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% else %}"about": { "@id": {{ seo_url | append: "/#person" | jsonify }} }{% endif %}
     }{% if page.collection == "publications" and page.authors %},
     {
-      "@type": {% if page.publication_type == "thesis" %}"CreativeWork"{% else %}"ScholarlyArticle"{% endif %},
+      "@type": {% if page.publication_type == "thesis" %}"Thesis"{% else %}"ScholarlyArticle"{% endif %},
       "@id": {{ canonical_url | append: "#scholarly-work" | jsonify }},
-      "headline": {{ page.title | strip_html | jsonify }},
+      "headline": {{ scholarly_title | strip_html | jsonify }},
+      "name": {{ scholarly_title | strip_html | jsonify }},
       "url": {{ canonical_url | jsonify }},
       "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.publication_language %}"inLanguage": {{ page.publication_language | jsonify }},{% endif %}
       "author": [
         {% for publication_author in page.authors %}{% if publication_author == site.author.name %}{"@type": "Person", "@id": {{ seo_url | append: "/#person" | jsonify }}, "name": {{ publication_author | jsonify }}}{% else %}{"@type": "Person", "name": {{ publication_author | jsonify }}}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
       ],
       "mainEntityOfPage": { "@id": {{ canonical_url | append: "#webpage" | jsonify }} }{% if page.venue %},
-      "isPartOf": {"@type": {% if page.publication_type == "thesis" %}"EducationalOrganization"{% else %}"Periodical"{% endif %}, "name": {{ page.venue | jsonify }}}{% endif %}{% if page.doi %},
-      "sameAs": {{ "https://doi.org/" | append: page.doi | jsonify }}{% endif %}{% if publication_pdf_url %},
-      "encoding": {"@type": "MediaObject", "contentUrl": {{ publication_pdf_url | jsonify }}, "encodingFormat": "application/pdf"}{% endif %}
+      "isPartOf": {"@type": {% if page.publication_type == "thesis" %}"EducationalOrganization"{% elsif page.publication_type == "conference" %}"PublicationIssue"{% else %}"Periodical"{% endif %}, "name": {{ page.venue | jsonify }}{% if page.issn %}, "issn": {{ page.issn | jsonify }}{% endif %}}{% endif %}{% if page.volume %},
+      "volumeNumber": {{ page.volume | jsonify }}{% endif %}{% if page.firstpage %},
+      "pageStart": {{ page.firstpage | jsonify }}{% endif %}{% if page.lastpage %},
+      "pageEnd": {{ page.lastpage | jsonify }}{% endif %}{% if page.article_number %},
+      "pagination": {{ page.article_number | jsonify }}{% endif %}{% if page.doi %},
+      "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ page.doi | jsonify }}}{% endif %}{% if publication_pdf_url %},
+      "isAccessibleForFree": true,
+      "encoding": {"@type": "MediaObject", "contentUrl": {{ publication_pdf_url | jsonify }}, "encodingFormat": "application/pdf"}{% endif %}{% if page.doi or page.hal_id %},
+      "sameAs": [{% if page.doi %}{{ "https://doi.org/" | append: page.doi | jsonify }}{% if page.hal_id %},{% endif %}{% endif %}{% if page.hal_id %}{{ "https://hal.science/" | append: page.hal_id | jsonify }}{% endif %}]{% endif %}
     }{% endif %}
   ]
 }
