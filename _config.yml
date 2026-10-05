@@ -73,9 +73,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # No Google Analytics ID is configured; the visitor counter is separate.
+  provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : "G-2BPBTS6B09"
 
 
 # Site Author
@@ -157,7 +157,7 @@ keep_files:
   - .git
   - .svn
 encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown,mkdown,mkd,md"
 
 
 # Conversion
@@ -284,7 +284,7 @@ whitelist:
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  - Jekyll Archives plugin archive pages Jekyll Archives plugin archive pages ~> type: jekyll-archives
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
