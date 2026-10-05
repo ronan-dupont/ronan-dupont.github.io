@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "Ronan Dupont"
+seo_title: "Ronan Dupont | Applied Mathematics & Numerical Linear Algebra"
+description: "Ronan Dupont is a postdoctoral researcher at Nagoya University working on applied mathematics, numerical linear algebra, iterative solvers and scientific computing."
 excerpt: "About me"
 lang: en
 translation_key: home
