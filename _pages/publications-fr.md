@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+seo_title: "Publications scientifiques de Ronan Dupont"
 permalink: /fr/publications/
 lang: fr
 translation_key: publications
