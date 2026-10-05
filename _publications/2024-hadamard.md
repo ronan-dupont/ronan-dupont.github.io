@@ -3,8 +3,15 @@ title: "Modelling beaches morphodynamic by Hadamard sensitivity analysis"
 collection: publications
 permalink: /publication/2024_hadamard
 excerpt: ''
+description: "Ronan Dupont, Frédéric Bouchette and Bijan Mohammadi's 2024 Ocean Modelling article on beach morphodynamics, Hadamard sensitivity analysis and wave-energy minimization."
 date: 2024-04-09
 venue: 'Ocean Modelling'
+volume: "189"
+authors:
+  - "Ronan Dupont"
+  - "Frédéric Bouchette"
+  - "Bijan Mohammadi"
+doi: "10.1016/j.ocemod.2024.102370"
 paperurl: "/files/paper/2024_hadamard.pdf"
 
 citation: 'Dupont, Ronan, Frédéric Bouchette, and Bijan Mohammadi (2024). “Modelling beaches morphodynamic by Hadamard sensitivity analysis”. In: Ocean Modelling, p. 102370. DOI: doi.org/10.1016/j.ocemod.2024.102370.'
