@@ -1,6 +1,8 @@
 ---
 permalink: /fr/
 title: "Ronan Dupont"
+seo_title: "Ronan Dupont | Mathématiques appliquées & algèbre numérique"
+description: "Ronan Dupont est chercheur postdoctoral à l’Université de Nagoya en mathématiques appliquées, algèbre linéaire numérique, méthodes itératives et calcul scientifique."
 excerpt: "À propos"
 lang: fr
 translation_key: home
