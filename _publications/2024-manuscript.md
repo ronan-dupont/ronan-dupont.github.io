@@ -3,8 +3,12 @@ title: "Manuscript - Couplage vagues-morphodynamique du littoral par principe de
 collection: publications
 permalink: /publication/2024_manuscript
 excerpt: ''
+description: "Ronan Dupont's 2024 PhD thesis at the University of Montpellier on wave-morphodynamic coupling of the coastline using minimization principles."
 date: 2024-09-30
 venue: 'University of Montpellier'
+publication_type: thesis
+authors:
+  - "Ronan Dupont"
 paperurl: "/files/manuscript_final.pdf"
 
 citation: 'Dupont, Ronan (2024). “Couplage vagues-morphodynamique du littoral par principe de minimisation”. In: University of Montpellier.'
