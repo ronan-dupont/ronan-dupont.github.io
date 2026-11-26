@@ -4,3 +4,7 @@ _site/
 .jekyll-metadata
 .sass-cache/
 vendor/bundle/
+# Only explicitly reviewed public slide selections belong on this website.
+/files/presentation/Osaka_seminar.pdf
+/files/presentation/Osaka_seminar_selected.pdf
+/files/presentation/Osaka_self_introduction.pdf
